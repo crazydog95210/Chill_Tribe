@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title>供應商平台樣板</title>
 	<!-- Google Font: Source Sans Pro -->
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -13,158 +13,254 @@
 	<link rel="stylesheet" href="../dist/css/adminlte.min.css">
 	<!-- custom Theme style -->
 	<link rel="stylesheet" href="../css/platform.css">
+
 </head>
 
 <body>
-	<!-- sidebar -->
+
+	<!-- Preloader 勿動-->
+	<!-- <div class="preloader flex-column justify-content-center align-items-center">
+		<img class="animation__shake" src="../dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+	</div> -->
+
+	<!-- sidebar 勿動-->
 	<aside id="sidebar"></aside>
 	<!-- sidebar end -->
 
-	<!-- Breadcrumb Navigation -->
+	<!-- Control Sidebar 勿動-->
+	<!-- <aside class="control-sidebar control-sidebar-dark"> -->
+	<!-- Control sidebar content goes here -->
+	<!-- </aside> -->
+	<!-- /.control-sidebar -->
+
+
+	<!-- navbar 上方導覽列 -->
+	<nav class="main-header navbar navbar-light navbar-white">
+		<!-- SEARCH FORM -->
+		<form class="form-inline" style="position: absolute; left: 50%; transform: translateX(-50%);">
+			<div class="input-group">
+				<input class="form-control form-control-navbar" type="search" placeholder="功能搜尋" aria-label="Search">
+				<div class="input-group-append">
+					<button class="btn btn-navbar" type="submit">
+						<i class="fas fa-search"></i>
+					</button>
+				</div>
+			</div>
+		</form>
+
+		<!-- Right navbar links 右上導覽 - 使用者登入 -->
+		<ul class="navbar-nav ms-auto" style="margin-left: auto; padding-right: 30px;">
+			<!-- User Dropdown Menu -->
+			<li class="nav-item dropdown">
+				<a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button"
+					style="display: inline-block"><i class="fa-solid fa-user" style="margin-right: 10px;"></i>
+					<span>Administrator</span>
+					<i class="fa-solid fa-caret-down" style="padding: 10px;"></i></a>
+				<!-- 下拉選項的內容的話可以來用這邊改 -> 還沒做 -->
+				<!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+						<span class="dropdown-header">15 Notifications</span>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item">
+							<i class="fas fa-envelope mr-2"></i> 4 new messages
+							<span class="float-right text-muted text-sm">3 mins</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+					</div> -->
+			</li>
+		</ul>
+
+	</nav>
+	<!-- /.navbar 導覽列結束 -->
+
+
+	<!-- content -->
 	<div class="content-wrapper" style="min-height: 490px;">
-		<div class="content-header">
-			<section class="content-header">
-				<div class="container-fluid">
-					<div class="row mb-2">
-						<div class="col-sm-6">
-							<ol class="breadcrumb float-sm-left">
-								<li class="breadcrumb-item"><a href="#">供應商管理</a></li>
-								<li class="breadcrumb-item"><a href="#">供應商列表</a></li>
-								<li class="breadcrumb-item active">SPL1234562</li>
-							</ol>
-						</div>
-						<!-- <div class="col-sm-6">
-							<h1>Boxed Layout</h1>
-						</div> -->
+		<!-- content header 內容標頭 -->
+		<section class="content-header">
+			<div class="container-fluid">
+				<!-- Breadcrumb Navigation 索引導覽-->
+				<div class="row mb-2">
+					<div class="col-sm-6">
+						<ol class="breadcrumb float-sm-left">
+							<li class="breadcrumb-item"><a href="#">供應商管理</a></li>
+							<li class="breadcrumb-item"><a href="#">供應商列表</a></li>
+							<li class="breadcrumb-item active">SPL1234562</li>
+						</ol>
 					</div>
 				</div>
-				<!-- /.container-fluid -->
-			</section>
+			</div>
+			<!-- /.container-fluid -->
+			<!-- Back Button 返回鍵-->
+			<button type="button" class="btn btn-secondary" style="margin-left: 8px;">Back</button>
+		</section>
 
-			<!-- Main content -->
-			<section class="content">
-				<div class="container-fluid">
-					<div class="row">
-						<button type="button" class="btn btn-block btn-secondary">Back</button>
-						<div class="col-12">
-							<!-- Default box -->
+		<!-- Main content -->
+		<section class="content">
+			<div class="container-fluid">
+				<!-- Default box -->
+				<div class="card">
+					<div class="card-header">
+						<h3 style="text-align: center; margin-bottom: 0;">供應商</h3>
+					</div>
+					<div class="card-header">
+						<div class="back-ground" style="width: 100%;">
+							<img src="https://placehold.co/3000x1000" class="img-fluid mb-2" alt="white sample">
+						</div>
+						<!-- Profile Image -->
+						<img class="profile-user-img img-fluid img-circle" src="../dist/img/user4-128x128.jpg"
+							alt="User profile picture" style="position: relative; left: 30px; top: -60px">
+						<h3 class="profile-suppliername text-right"
+							style="position:absolute; display: inline-block; margin-left: 50px;">Nina
+							Mcintire Nina Mcintire Nina Mcintire</h3>
+					</div>
+
+					<!-- tab 所有的內容-->
+					<div class="card card-primary">
+
+						<div class="col-md-9" style="max-width: 100%">
 							<div class="card">
-								<div class="card-header">
-									<h1 class="card-title" style="font-size: 20px; position: relative; left: 45%;">供應商
-									</h1>
-									<div class="card-tools">
-									</div>
+								<!-- tab -->
+								<div class="card-header p-2">
+									<ul class="nav nav-pills">
+										<li class="nav-item"><a class="nav-link active" href="#basic-info"
+												data-toggle="tab">基本資料</a></li>
+										<li class="nav-item"><a class="nav-link" href="#activity-onboard"
+												data-toggle="tab">上架活動</a></li>
+										<li class="nav-item"><a class="nav-link" href="#approved-status"
+												data-toggle="tab">審核狀態</a></li>
+									</ul>
 								</div>
-								<div class="card-header">
-									<div class="back-ground" style="width: 100%;">
-										<img src="https://placehold.co/950x300" class="img-fluid mb-2"
-											alt="white sample">
-									</div>
-									<!-- Profile Image -->
-									<img class="profile-user-img img-fluid img-circle"
-										src="../dist/img/user4-128x128.jpg" alt="User profile picture"
-										style="position: relative; left: 30px; top: -60px">
-									<h3 class="profile-suppliername text-right"
-										style="position:absolute; display: inline-block; margin-left: 50px;">Nina
-										Mcintire Nina Mcintire Nina Mcintire</h3>
-								</div>
+								<!-- /.tab -->
 
-								<div class="card card-primary">
+								<!-- 這裡要放tab 裡面各自的內容↓ -->
+								<!-- tab 以下的內容-->
+								<div class="card-body">
+									<div class="tab-content">
+										<!-- /.tab-pane - basic info-->
+										<!-- 預設顯示的要加active 在class -->
+										<div class="tab-pane active" id="basic-info">
+											<div>
+												<div class="card-body box-profile">
+													<div class="row">
+														<div class="col-6">
+															<ul class="list-group list-group-unbordered mb-3">
+																<li class="list-group-item">
+																	<b>供應商編號</b>
+																	<p class="float-right text-muted"
+																		style="margin-bottom: 0;">SPL1234562</p>
+																</li>
+																<li class="list-group-item">
+																	<b>負責人/法人</b>
+																	<p class="float-right text-muted"
+																		style="margin-bottom: 0;">王小明</p>
+																</li>
+																<li class="list-group-item">
+																	<b>連絡電話</b>
+																	<p class="float-right text-muted"
+																		style="margin-bottom: 0;">0912345678</p>
+																</li>
+																<li class="list-group-item">
+																	<b>身分證字號/組織統一編號</b>
+																	<p class="float-right text-muted"
+																		style="margin-bottom: 0;">A125496387</p>
+																</li>
+															</ul>
+														</div>
+														<div class="col-6">
+															<ul class="list-group list-group-unbordered mb-3">
+																<li class="list-group-item left">
+																	<b>註冊日期/時間</b>
+																	<p class="float-right text-muted"
+																		style="margin-bottom: 0;">2024/12/28 19:35</p>
+																</li>
+																<li class="list-group-item">
+																	<b>電子信箱</b>
+																	<p class="float-right text-muted"
+																		style="margin-bottom: 0;">
+																		hsiaomingwang@example.com.tw</p>
+																</li>
+																<li class="list-group-item">
+																	<b>地址</b>
+																	<p class="float-right text-muted"
+																		style="margin-bottom: 0;">104台北市中山區南京東路三段219號4F
+																	</p>
+																</li>
+															</ul>
+														</div>
+														<div class="col-12">
+															<h6 class="lead" style="font-weight: bold;">供應商簡介</h6>
 
-									<div class="col-md-9" style="max-width: 100%">
-										<div class="card">
-											<div class="card-header p-2">
-												<ul class="nav nav-pills">
-													<li class="nav-item"><a class="nav-link active" href="#basic-info"
-															data-toggle="tab">基本資料</a></li>
-													<li class="nav-item"><a class="nav-link" href="#activity-onboard"
-															data-toggle="tab">上架活動</a></li>
-													<li class="nav-item"><a class="nav-link" href="#approved-status"
-															data-toggle="tab">審核狀態</a></li>
-												</ul>
-											</div>
-											<!-- /.card-header -->
-											<div class="card-body">
-												<div class="tab-content">
-													<!-- /.tab-pane - basic info-->
-													<div class="tab-pane" id="basic-info">
-														<div class="">
-															<div class="card-body box-profile">
-																<ul class="list-group list-group-unbordered mb-3">
-																	<li class="list-group-item">
-																		<b>Followers</b> <a
-																			class="float-right">1,322</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>Following</b> <a class="float-right">543</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>Friends</b> <a class="float-right">13,287</a>
-																	</li>
-																</ul>
-															</div>
+
+															<p class="text-muted well well-sm shadow-none"
+																style="margin-top: 10px;">
+																這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。
+															</p>
 														</div>
 													</div>
-													<!-- /.tab-pane -->
-
-													<!-- /.tab-pane - activity-onboard-->
-													<div class="tab-pane" id="activity-onboard">
-														<div class="">
-															<div class="card-body box-profile">
-																<ul class="list-group list-group-unbordered mb-3">
-																	<li class="list-group-item">
-																		<b>c8 c8 c8 </b> <a
-																			class="float-right">1,322</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>Following</b> <a class="float-right">543</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>Friends</b> <a class="float-right">13,287</a>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<!-- /.tab-pane -->
-													<!-- /.tab-pane - approved-status-->
-													<div class="tab-pane" id="approved-status">
-														<div class="">
-															<div class="card-body box-profile">
-																<ul class="list-group list-group-unbordered mb-3">
-																	<li class="list-group-item">
-																		<b>approved-status</b> <a
-																			class="float-right">1,322</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>approved-status</b> <a class="float-right">543</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>approved-status</b> <a class="float-right">13,287</a>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<!-- /.tab-pane -->
 												</div>
-												<!-- /.tab-content -->
-											</div><!-- /.card-body -->
+											</div>
 										</div>
-										<!-- /.card -->
+										<!-- /.tab-pane -->
+
+										<!-- /.tab-pane - activity-onboard-->
+										<div class="tab-pane" id="activity-onboard">
+											<div>
+												<div class="card-body box-profile">
+													<ul class="list-group list-group-unbordered mb-3">
+														<li class="list-group-item">
+															<b>c8 c8 c8 </b> <a class="float-right">1,322</a>
+														</li>
+														<li class="list-group-item">
+															<b>Following</b> <a class="float-right">543</a>
+														</li>
+														<li class="list-group-item">
+															<b>Friends</b> <a class="float-right">13,287</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- /.tab-pane -->
+										<!-- /.tab-pane - approved-status-->
+										<div class="tab-pane" id="approved-status">
+											<div>
+												<div class="card-body box-profile">
+													<ul class="list-group list-group-unbordered mb-3">
+														<li class="list-group-item">
+															<b>approved-status</b> <a class="float-right">1,322</a>
+														</li>
+														<li class="list-group-item">
+															<b>approved-status</b> <a class="float-right">543</a>
+														</li>
+														<li class="list-group-item">
+															<b>approved-status</b> <a class="float-right">13,287</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!-- /.tab-pane -->
 									</div>
-									<!-- /.card-body -->
-								</div>
-								<!-- /.card-body -->
-								<div class="card-footer">頁碼</div>
-								<!-- /.card-footer-->
+									<!-- /.tab-content -->
+								</div><!-- /.tab 內容結束 -->
+								<!-- 這裡要放tab 裡面各自的內容↑ -->
+
+
 							</div>
-							<!-- /.card -->
+							<!-- /.tab 內容結束 -->
 						</div>
+						<!-- /.card-body -->
 					</div>
+					<!-- /. tab 所有的內容 結束 -->
+
+					<!-- card-footer-->
+					<div class="card-footer">頁碼</div>
+					<!-- /.card-footer-->
 				</div>
-			</section>
-		</div>
+			</div>
+			<!-- Main content -->
+		</section>
 	</div>
 	<!-- /.content -->
 
@@ -204,6 +300,8 @@
 	<script src="../dist/js/pages/dashboard.js"></script>
 	<!-- import admin.js -->
 	<script src="../dist/js/admin.js"></script>
+	<!-- import font-awesome -->
+	<script src="https://kit.fontawesome.com/775be41cdd.js" crossorigin="anonymous"></script>
 
 </body>
 
