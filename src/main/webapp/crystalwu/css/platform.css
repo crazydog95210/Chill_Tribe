@@ -14,3 +14,18 @@
     font-size: 21px;
     margin-top: 1px;
 }
+
+.card-header .back-ground{
+    font-size: 0;
+}
+
+.card-header .back-ground img{
+    max-width: 100%;
+}
+
+/* 待確認要怎麼出現卷軸 */
+/* 是否需要將side bar 固定住 */
+.content .container-fluid{
+    height: calc(100% -(10rem + 1px));
+    overflow-y: auto;
+}
