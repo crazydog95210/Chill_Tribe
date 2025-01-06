@@ -2,171 +2,491 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>Insert title here</title>
-	<!-- Google Font: Source Sans Pro -->
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
-	<!-- Theme style -->
-	<link rel="stylesheet" href="../dist/css/adminlte.min.css">
-	<!-- custom Theme style -->
-	<link rel="stylesheet" href="../css/platform.css">
+<meta charset="UTF-8">
+<title>供應商平台樣板</title>
+<!-- Google Font: Source Sans Pro -->
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="../plugins/fontawesome-free/css/all.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="../dist/css/adminlte.min.css">
+<!-- custom Theme style -->
+<link rel="stylesheet" href="../css/platform.css">
+
+<!-- DataTables -->
+<link rel="stylesheet"
+	href="../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet"
+	href="../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+<link rel="stylesheet"
+	href="../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+<!-- iCheck for checkboxes and radio inputs -->
+<link rel="stylesheet"
+	href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+
+
 </head>
 
 <body>
-	<!-- sidebar -->
+
+	<!-- Preloader 勿動-->
+	<!-- <div class="preloader flex-column justify-content-center align-items-center">
+		<img class="animation__shake" src="../dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+	</div> -->
+
+	<!-- sidebar 勿動-->
 	<aside id="sidebar"></aside>
 	<!-- sidebar end -->
 
-	<!-- Breadcrumb Navigation -->
+	<!-- Control Sidebar 勿動-->
+	<!-- <aside class="control-sidebar control-sidebar-dark"> -->
+	<!-- Control sidebar content goes here -->
+	<!-- </aside> -->
+	<!-- /.control-sidebar -->
+
+
+	<!-- navbar 上方導覽列 -->
+	<nav class="main-header navbar navbar-light navbar-white">
+		<!-- SEARCH FORM -->
+		<form class="form-inline"
+			style="position: absolute; left: 50%; transform: translateX(-50%);">
+			<div class="input-group">
+				<input class="form-control form-control-navbar" type="search"
+					placeholder="功能搜尋" aria-label="Search">
+				<div class="input-group-append">
+					<button class="btn btn-navbar" type="submit">
+						<i class="fas fa-search"></i>
+					</button>
+				</div>
+			</div>
+		</form>
+
+		<!-- Right navbar links 右上導覽 - 使用者登入 -->
+		<ul class="navbar-nav ms-auto"
+			style="margin-left: auto; padding-right: 30px;">
+			<!-- User Dropdown Menu -->
+			<li class="nav-item dropdown"><a class="nav-link"
+				data-widget="control-sidebar" data-slide="true" href="#"
+				role="button" style="display: inline-block"><i
+					class="fa-solid fa-user" style="margin-right: 10px;"></i> <span>Administrator</span>
+					<i class="fa-solid fa-caret-down" style="padding: 10px;"></i></a> <!-- 下拉選項的內容的話可以來用這邊改 -> 還沒做 -->
+				<!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+						<span class="dropdown-header">15 Notifications</span>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item">
+							<i class="fas fa-envelope mr-2"></i> 4 new messages
+							<span class="float-right text-muted text-sm">3 mins</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+					</div> --></li>
+		</ul>
+
+	</nav>
+	<!-- /.navbar 導覽列結束 -->
+
+
+	<!-- content -->
 	<div class="content-wrapper" style="min-height: 490px;">
-		<div class="content-header">
-			<section class="content-header">
-				<div class="container-fluid">
-					<div class="row mb-2">
-						<div class="col-sm-6">
-							<ol class="breadcrumb float-sm-left">
-								<li class="breadcrumb-item"><a href="#">供應商管理</a></li>
-								<li class="breadcrumb-item"><a href="#">供應商列表</a></li>
-								<li class="breadcrumb-item active">SPL1234562</li>
-							</ol>
-						</div>
-						<!-- <div class="col-sm-6">
-							<h1>Boxed Layout</h1>
-						</div> -->
+		<!-- content header 內容標頭 -->
+		<section class="content-header">
+			<div class="container-fluid">
+				<!-- Breadcrumb Navigation 索引導覽-->
+				<div class="row mb-2">
+					<div class="col-sm-6">
+						<ol class="breadcrumb float-sm-left">
+							<li class="breadcrumb-item"><a href="#">供應商管理</a></li>
+							<li class="breadcrumb-item"><a href="#">供應商列表</a></li>
+							<li class="breadcrumb-item active">SPL1234562</li>
+						</ol>
 					</div>
 				</div>
-				<!-- /.container-fluid -->
-			</section>
+			</div>
+			<!-- /.container-fluid -->
+			<!-- Back Button 返回鍵-->
+			<button type="button" class="btn btn-secondary"
+				style="margin-left: 8px;">Back</button>
+		</section>
 
-			<!-- Main content -->
-			<section class="content">
-				<div class="container-fluid">
-					<div class="row">
-						<button type="button" class="btn btn-block btn-secondary">Back</button>
-						<div class="col-12">
-							<!-- Default box -->
-							<div class="card">
-								<div class="card-header">
-									<h1 class="card-title" style="font-size: 20px; position: relative; left: 45%;">供應商
-									</h1>
-									<div class="card-tools">
-									</div>
-								</div>
-								<div class="card-header">
-									<div class="back-ground" style="width: 100%;">
-										<img src="https://placehold.co/950x300" class="img-fluid mb-2"
-											alt="white sample">
-									</div>
-									<!-- Profile Image -->
-									<img class="profile-user-img img-fluid img-circle"
-										src="../dist/img/user4-128x128.jpg" alt="User profile picture"
-										style="position: relative; left: 30px; top: -60px">
-									<h3 class="profile-suppliername text-right"
-										style="position:absolute; display: inline-block; margin-left: 50px;">Nina
-										Mcintire Nina Mcintire Nina Mcintire</h3>
-								</div>
+		<!-- Main content -->
+		<section class="content">
+			<!-- Default box -->
+			<div class="card">
+				<div class="card-header">
+					<h3 style="text-align: center; margin-bottom: 0;">供應商</h3>
+				</div>
+				<div class="card-header">
+					<div class="back-ground" style="width: 100%;">
+						<img src="https://placehold.co/3000x1000" class="img-fluid mb-2"
+							alt="white sample">
+					</div>
+					<!-- Profile Image -->
+					<img class="profile-user-img img-fluid img-circle"
+						src="../dist/img/user4-128x128.jpg" alt="User profile picture"
+						style="position: relative; left: 30px; top: -60px">
+					<h3 class="profile-suppliername text-right"
+						style="position: absolute; display: inline-block; margin-left: 50px;">Nina
+						Mcintire Nina Mcintire Nina Mcintire</h3>
+				</div>
 
-								<div class="card card-primary">
+				<!-- tab 所有的內容-->
+				<div class="card card-primary">
 
-									<div class="col-md-9" style="max-width: 100%">
-										<div class="card">
-											<div class="card-header p-2">
-												<ul class="nav nav-pills">
-													<li class="nav-item"><a class="nav-link active" href="#basic-info"
-															data-toggle="tab">基本資料</a></li>
-													<li class="nav-item"><a class="nav-link" href="#activity-onboard"
-															data-toggle="tab">上架活動</a></li>
-													<li class="nav-item"><a class="nav-link" href="#approved-status"
-															data-toggle="tab">審核狀態</a></li>
-												</ul>
-											</div>
-											<!-- /.card-header -->
-											<div class="card-body">
-												<div class="tab-content">
-													<!-- /.tab-pane - basic info-->
-													<div class="tab-pane" id="basic-info">
-														<div class="">
-															<div class="card-body box-profile">
-																<ul class="list-group list-group-unbordered mb-3">
-																	<li class="list-group-item">
-																		<b>Followers</b> <a
-																			class="float-right">1,322</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>Following</b> <a class="float-right">543</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>Friends</b> <a class="float-right">13,287</a>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<!-- /.tab-pane -->
-
-													<!-- /.tab-pane - activity-onboard-->
-													<div class="tab-pane" id="activity-onboard">
-														<div class="">
-															<div class="card-body box-profile">
-																<ul class="list-group list-group-unbordered mb-3">
-																	<li class="list-group-item">
-																		<b>c8 c8 c8 </b> <a
-																			class="float-right">1,322</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>Following</b> <a class="float-right">543</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>Friends</b> <a class="float-right">13,287</a>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<!-- /.tab-pane -->
-													<!-- /.tab-pane - approved-status-->
-													<div class="tab-pane" id="approved-status">
-														<div class="">
-															<div class="card-body box-profile">
-																<ul class="list-group list-group-unbordered mb-3">
-																	<li class="list-group-item">
-																		<b>approved-status</b> <a
-																			class="float-right">1,322</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>approved-status</b> <a class="float-right">543</a>
-																	</li>
-																	<li class="list-group-item">
-																		<b>approved-status</b> <a class="float-right">13,287</a>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-													<!-- /.tab-pane -->
-												</div>
-												<!-- /.tab-content -->
-											</div><!-- /.card-body -->
-										</div>
-										<!-- /.card -->
-									</div>
-									<!-- /.card-body -->
-								</div>
-								<!-- /.card-body -->
-								<div class="card-footer">頁碼</div>
-								<!-- /.card-footer-->
+					<div class="col-md-9" style="max-width: 100%">
+						<div class="card" style="max-width: 100%">
+							<!-- tab -->
+							<div class="card-header p-2">
+								<ul class="nav nav-pills">
+									<li class="nav-item"><a class="nav-link active"
+										href="#basic-info" data-toggle="tab">基本資料</a></li>
+									<li class="nav-item"><a class="nav-link"
+										href="#activity-onboard" data-toggle="tab">上架活動</a></li>
+									<li class="nav-item"><a class="nav-link"
+										href="#approved-status" data-toggle="tab">審核狀態</a></li>
+								</ul>
 							</div>
-							<!-- /.card -->
+							<!-- /.tab -->
+
+							<!-- 這裡要放tab 裡面各自的內容↓ -->
+							<!-- tab 以下的內容-->
+							<div class="card-body">
+								<div class="tab-content">
+									<!-- /.tab-pane - basic info-->
+									<!-- 預設顯示的要加active 在class -->
+									<div class="tab-pane active" id="basic-info">
+										<div class="card-body box-profile">
+											<div class="row">
+												<div class="col-6">
+													<ul class="list-group list-group-unbordered mb-3">
+														<li class="list-group-item"><b>供應商編號</b>
+															<p class="float-right text-muted"
+																style="margin-bottom: 0;">SPL1234562</p></li>
+														<li class="list-group-item"><b>負責人/法人</b>
+															<p class="float-right text-muted"
+																style="margin-bottom: 0;">王小明</p></li>
+														<li class="list-group-item"><b>連絡電話</b>
+															<p class="float-right text-muted"
+																style="margin-bottom: 0;">0912345678</p></li>
+														<li class="list-group-item"><b>身分證字號/組織統一編號</b>
+															<p class="float-right text-muted"
+																style="margin-bottom: 0;">A125496387</p></li>
+													</ul>
+												</div>
+												<div class="col-6">
+													<ul class="list-group list-group-unbordered mb-3">
+														<li class="list-group-item left"><b>註冊日期/時間</b>
+															<p class="float-right text-muted"
+																style="margin-bottom: 0;">2024/12/28 19:35</p></li>
+														<li class="list-group-item"><b>電子信箱</b>
+															<p class="float-right text-muted"
+																style="margin-bottom: 0;">
+																hsiaomingwang@example.com.tw</p></li>
+														<li class="list-group-item"><b>地址</b>
+															<p class="float-right text-muted"
+																style="margin-bottom: 0;">104台北市中山區南京東路三段219號4F</p></li>
+													</ul>
+												</div>
+												<div class="col-12">
+													<h6 class="lead" style="font-weight: bold;">供應商簡介</h6>
+
+
+													<p class="text-muted well well-sm shadow-none"
+														style="margin-top: 10px;">
+														這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。這是範例簡介，不會有圖片。
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /.tab-pane - basic info 結束-->
+
+									<!-- /.tab-pane - activity-onboard-->
+									<div class="tab-pane" id="activity-onboard">
+										<div class="card">
+											<section class="content">
+												<div class="container-fluid">
+													<div class="row">
+														<!-- <div class="col-12"> -->
+														<!-- <div class="card-header">
+																	<h3 class="card-title">DataTable with default features</h3>
+																	</div> -->
+														<!-- /.card-header -->
+														<!-- <div class="card-body"> -->
+
+														<table id="example1"
+															class="table table-bordered table-striped">
+															<thead>
+																<tr>
+																	<th>活動編號</th>
+																	<th>活動名稱</th>
+																	<th>活動分類</th>
+																	<th>活動開始日期</th>
+																	<th>活動狀態</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Trident</td>
+																	<td>Internet Explorer 4.0</td>
+																	<td>Win 95+</td>
+																	<td>4</td>
+																	<td>X</td>
+																</tr>
+																<tr>
+																	<td>Trident</td>
+																	<td>Internet Explorer 5.0</td>
+																	<td>Win 95+</td>
+																	<td>5</td>
+																	<td>C</td>
+																</tr>
+																<tr>
+																	<td>Trident</td>
+																	<td>Internet Explorer 5.5</td>
+																	<td>Win 95+</td>
+																	<td>5.5</td>
+																	<td>A</td>
+																</tr>
+																<tr>
+																	<td>Trident</td>
+																	<td>Internet Explorer 6</td>
+																	<td>Win 98+</td>
+																	<td>6</td>
+																	<td>A</td>
+																</tr>
+																<tr>
+																	<td>Trident</td>
+																	<td>Internet Explorer 7</td>
+																	<td>Win XP SP2+</td>
+																	<td>7</td>
+																	<td>A</td>
+																</tr>
+																<tr>
+																	<td>Gecko</td>
+																	<td>Firefox 3.0</td>
+																	<td>Win 2k+ / OSX.3+</td>
+																	<td>1.9</td>
+																	<td>A</td>
+																</tr>
+																<tr>
+																	<td>Trident</td>
+																	<td>Internet Explorer 4.0</td>
+																	<td>Win 95+</td>
+																	<td>4</td>
+																	<td>X</td>
+																</tr>
+																<tr>
+																	<td>Trident</td>
+																	<td>Internet Explorer 5.0</td>
+																	<td>Win 95+</td>
+																	<td>5</td>
+																	<td>C</td>
+																</tr>
+																<tr>
+																	<td>Trident</td>
+																	<td>Internet Explorer 5.5</td>
+																	<td>Win 95+</td>
+																	<td>5.5</td>
+																	<td>A</td>
+																</tr>
+																<tr>
+																	<td>Trident</td>
+																	<td>Internet Explorer 6</td>
+																	<td>Win 98+</td>
+																	<td>6</td>
+																	<td>A</td>
+																</tr>
+																<tr>
+																	<td>Trident</td>
+																	<td>Internet Explorer 7</td>
+																	<td>Win XP SP2+</td>
+																	<td>7</td>
+																	<td>A</td>
+																</tr>
+																<tr>
+																	<td>Gecko</td>
+																	<td>Firefox 3.0</td>
+																	<td>Win 2k+ / OSX.3+</td>
+																	<td>1.9</td>
+																	<td>A</td>
+																</tr>
+															</tbody>
+														</table>
+														<!-- </div> -->
+														<!-- /.card-body -->
+														<!-- </div> -->
+
+														<!-- card-footer-->
+														<!-- <div class="row">
+																	<div class="col-sm-12 col-md-5">
+																		<div class="dataTables_info" id="example1_info" role="status"
+																			aria-live="polite">Showing 1 to 10 of 57 entries
+																		</div>
+																	</div>
+																	<div class="col-sm-12 col-md-7">
+																		<div class="dataTables_paginate paging_simple_numbers"
+																			id="example1_paginate">
+																			<ul class="pagination">
+																				<li class="paginate_button page-item previous disabled"
+																					id="example1_previous"><a href="#"
+																						aria-controls="example1" data-dt-idx="0"
+																						tabindex="0" class="page-link">Previous</a></li>
+																				<li class="paginate_button page-item active"><a href="#"
+																						aria-controls="example1" data-dt-idx="1"
+																						tabindex="0" class="page-link">1</a></li>
+																				<li class="paginate_button page-item "><a href="#"
+																						aria-controls="example1" data-dt-idx="2"
+																						tabindex="0" class="page-link">2</a></li>
+																				<li class="paginate_button page-item "><a href="#"
+																						aria-controls="example1" data-dt-idx="3"
+																						tabindex="0" class="page-link">3</a></li>
+																				<li class="paginate_button page-item "><a href="#"
+																						aria-controls="example1" data-dt-idx="4"
+																						tabindex="0" class="page-link">4</a></li>
+																				<li class="paginate_button page-item "><a href="#"
+																						aria-controls="example1" data-dt-idx="5"
+																						tabindex="0" class="page-link">5</a></li>
+																				<li class="paginate_button page-item "><a href="#"
+																						aria-controls="example1" data-dt-idx="6"
+																						tabindex="0" class="page-link">6</a></li>
+																				<li class="paginate_button page-item next"
+																					id="example1_next"><a href="#"
+																						aria-controls="example1" data-dt-idx="7"
+																						tabindex="0" class="page-link">Next</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div> -->
+														<!-- /.card-footer-->
+													</div>
+												</div>
+											</section>
+										</div>
+									</div>
+									<!-- /.tab-pane -->
+
+									<!-- /.tab-pane - approved-status-->
+									<div class="tab-pane" id="approved-status">
+										<div class="row">
+											<!-- iCheck -->
+											<div class="card card-success col-12"
+												style="padding-left: 0;">
+												<div class="card-header">
+													<h3 class="card-title">檢查項目</h3>
+												</div>
+												<div class="card-body">
+													<!-- Minimal style -->
+													<div class="row">
+														<!-- checkbox -->
+														<div class="form-group clearfix">
+															<div class="icheck-primary d-inline">
+																<input type="checkbox" id="checkboxPrimary1" checked>
+																<label for="checkboxPrimary1"> </label>
+															</div>
+															<div class="icheck-primary d-inline">
+																<label for="checkboxPrimary3"> 基本資料驗證通過 </label>
+															</div>
+														</div>
+													</div>
+													<!-- Minimal red style -->
+													<div class="row">
+														<!-- checkbox -->
+														<div class="form-group clearfix">
+															<div class="icheck-danger d-inline">
+																<input type="checkbox" checked id="checkboxDanger1">
+																<label for="checkboxDanger1"> </label>
+															</div>
+															<div class="icheck-danger d-inline">
+																<label for="checkboxDanger3"> 簡介符合規範 </label>
+															</div>
+														</div>
+
+													</div>
+													<!-- Minimal red style -->
+													<div class="row">
+														<!-- checkbox -->
+														<div class="form-group clearfix">
+															<div class="icheck-success d-inline">
+																<input type="checkbox" checked id="checkboxSuccess1">
+																<label for="checkboxSuccess1"> </label>
+															</div>
+															<div class="icheck-success d-inline">
+																<label for="checkboxSuccess3"> 基本資料驗證通過 </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- /.card -->
+										</div>
+										<!-- /.row -->
+									</div>
+									<!-- /.tab-pane -->
+								</div>
+								<!-- /.tab-content -->
+							</div>
+							<!-- /.tab 內容結束 -->
+							<!-- 這裡要放tab 裡面各自的內容↑ -->
+
+
 						</div>
+						<!-- /.tab 內容結束 -->
 					</div>
+					<!-- /.card-body -->
 				</div>
-			</section>
-		</div>
+				<!-- /. tab 所有的內容 結束 -->
+				<!-- Main content -->
+			</div>
+		</section>
 	</div>
 	<!-- /.content -->
+
+	<!-- DataTables  & Plugins -->
+	<script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+	<script
+		src="../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+	<script
+		src="../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+	<script
+		src="../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+	<script
+		src="../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+	<script src="../plugins/jszip/jszip.min.js"></script>
+	<script src="../plugins/pdfmake/pdfmake.min.js"></script>
+	<script src="../plugins/pdfmake/vfs_fonts.js"></script>
+	<script src="../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+	<script src="../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+	<script src="../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+	<script>
+		// 還不確定這段在幹嘛
+		$(function() {
+			$("#example1").DataTable(
+					{
+						"responsive" : true,
+						"lengthChange" : false,
+						"autoWidth" : false,
+						"buttons" : [ "copy", "csv", "excel", "pdf", "print",
+								"colvis" ]
+					}).buttons().container().appendTo(
+					'#example1_wrapper .col-md-6:eq(0)');
+			$('#example2').DataTable({
+				"paging" : true,
+				"lengthChange" : false,
+				"searching" : false,
+				"ordering" : true,
+				"info" : true,
+				"autoWidth" : false,
+				"responsive" : true,
+			});
+		});
+	</script>
+
+
 
 	<!-- jQuery -->
 	<script src="../plugins/jquery/jquery.min.js"></script>
@@ -191,11 +511,13 @@
 	<script src="../plugins/moment/moment.min.js"></script>
 	<script src="../plugins/daterangepicker/daterangepicker.js"></script>
 	<!-- Tempusdominus Bootstrap 4 -->
-	<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+	<script
+		src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 	<!-- Summernote -->
 	<script src="../plugins/summernote/summernote-bs4.min.js"></script>
 	<!-- overlayScrollbars -->
-	<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+	<script
+		src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 	<!-- AdminLTE App -->
 	<script src="../dist/js/adminlte.js"></script>
 	<!-- AdminLTE for demo purposes -->
@@ -204,6 +526,9 @@
 	<script src="../dist/js/pages/dashboard.js"></script>
 	<!-- import admin.js -->
 	<script src="../dist/js/admin.js"></script>
+	<!-- import font-awesome -->
+	<script src="https://kit.fontawesome.com/775be41cdd.js"
+		crossorigin="anonymous"></script>
 
 </body>
 
