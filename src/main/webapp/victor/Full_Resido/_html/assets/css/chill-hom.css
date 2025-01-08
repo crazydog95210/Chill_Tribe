@@ -55,8 +55,6 @@ select.form-control option {
 .utf_category_small_box_part:hover {
 	background-color: #66676b;
 	color: #fff;
-	-webkit-transform: scale(1.06);
-	-moz-transform: scale(1.1);
 	-webkit-transition: all 0.5s ease 0;
 	transition: all 0.5s ease 0;
 	transition: all 0.5s ease 0s;
@@ -224,5 +222,138 @@ select.form-control option {
 @media (min-width: 1240px) {
 	.utf_category_small_box_part {
 		width: calc(100% * (1 / 5) - 20px);
+	}
+}
+
+/*-------------listing-features---------------------------------------*/
+
+.listing-item-grid {
+	padding: 130px 30px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.listing-item-grid .d-gr-sec:before {
+	opacity: 0.7;
+}
+.listing-item-grid_title {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	right: 20px;
+	z-index: 10;
+	text-align: left;
+}
+.listing-item-grid_title h3,
+.listing-item-grid_title h3 a,
+.listing-item-grid:hover p {
+	color: #fff;
+}
+
+/* 基本樣式 */
+.listing-item-grid_title h3 a {
+  position: relative;
+  text-decoration: none;
+}
+
+/* 使用 ::before 添加底線動畫的起點 */
+.listing-item-grid_title h3 a::before {
+  content: ""; /* 偽元素內容 */
+  position: absolute;
+  bottom: 0; /* 底線位置 */
+  left: 0;
+  width: 0; /* 初始寬度為 0 */
+  height: 2px; /* 底線厚度 */
+  background: #fff; /* 底線顏色 */
+  transition: width 0.6s ease; /* 動畫速度 */
+  transform-origin: left; /* 從左側展開 */
+}
+
+/* 滑鼠懸停時展開底線 */
+.listing-item-grid_title h3 a:hover::before {
+  width: 100%; /* 底線寬度展開至文字的寬度 */
+}
+
+/* 滑鼠離開時底線回縮 */
+.listing-item-grid_title h3 a:not(:hover)::before {
+  width: 0; /* 回到初始寬度 */
+}
+.listing-item-grid_title p {
+	color: rgba(255, 255, 255, 0.7);
+	transition: all 0.3s ease-in-out 0s;
+}
+.listing-item-grid_title h3 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	font-size: 22px;
+	position: relative;
+}
+.listing-item-grid .listing-counter {
+	position: absolute;
+	left: 20px;
+	top: 30px;
+	z-index: 10;
+	padding: 8px 16px;
+	z-index: 3;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 500;
+	box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.3);
+}
+.listing-item-grid .listing-counter span {
+	padding-right: 6px;
+}
+.listing-slider-wrap {
+	z-index: 20;
+}
+.listing-slider .listing-item {
+	width: 100%;
+	padding: 0;
+	height: auto !important;
+	transition: all 0.3s ease-in-out 0s;
+}
+.listing-slider-item {
+	padding: 0 0 15px 0;
+}
+/* ------listing-single ------------------------------------------------------------ */
+.listing-carousel-wrap {
+	height: 500px;
+}
+.listing-carousel_pagination {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 20px;
+	z-index: 100;
+}
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0.95;
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+}
+.listing-item-grid .bg {
+	transform: translateZ(0);
+	transition: all 2000ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+}
+.listing-item-grid:hover .bg {
+	transform: scale(1.12);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.bg {
+		background-attachment: scroll !important;
+		background-position: center;
 	}
 }
