@@ -198,7 +198,6 @@
 			<!-- ============================ Categories Box Start ================================== -->
 			<section>
 				<div class="container">
-
 					<div class="row justify-content-center">
 						<div class="col-lg-7 col-md-10 text-center">
 							<div class="sec-heading center">
@@ -211,6 +210,14 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="container_categories_box margin-top-5 margin-bottom-30">
+								<a
+									href="listings_list_with_sidebar.html"
+									class="utf_category_small_box_part"
+								>
+									<i class="im im-icon-Electric-Guitar"></i>
+									<h4>Events</h4>
+									<span>08</span>
+								</a>
 								<a
 									href="listings_list_with_sidebar.html"
 									class="utf_category_small_box_part"
@@ -1062,6 +1069,128 @@
 			</section>
 			<!-- ============================ All Featured Property ================================== -->
 
+			<section class="container">
+
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-10 text-center">
+						<div class="sec-heading center">
+							<h2>Featured Property For Sale</h2>
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="listing-item-grid_container fl-wrap">
+          <div class="row">
+            <!--  listing-item-grid  -->
+            <div class="col-sm-4">
+              <div class="listing-item-grid">
+                <div
+                  class="bg"
+                  data-bg="./_html/assets/css/img/taipei.jpg"
+                ></div>
+                <div class="d-gr-sec"></div>
+                <div class="listing-counter color2-bg">
+                  <span>16 </span> Locations
+                </div>
+                <div class="listing-item-grid_title">
+                  <h3><a href="listing.html">台北</a></h3>
+                  <p>
+                    Constant care and attention to the patients makes good
+                    record
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--  listing-item-grid end  -->
+            <!--  listing-item-grid  -->
+            <div class="col-sm-4">
+              <div class="listing-item-grid">
+                <div
+                  class="bg"
+                  data-bg="./_html/assets/css/img/taichung.jpg"
+                ></div>
+                <div class="d-gr-sec"></div>
+                <div class="listing-counter color2-bg">
+                  <span>22 </span> Locations
+                </div>
+                <div class="listing-item-grid_title">
+                  <h3><a href="listing.html">台中</a></h3>
+                  <p>
+                    Constant care and attention to the patients makes good
+                    record
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--  listing-item-grid end  -->
+            <!--  listing-item-grid  -->
+            <div class="col-sm-4">
+              <div class="listing-item-grid">
+                <div
+                  class="bg"
+                  data-bg="./_html/assets/css/img/tainan.jpg"
+                ></div>
+                <div class="d-gr-sec"></div>
+                <div class="listing-counter color2-bg">
+                  <span>9 </span> Locations
+                </div>
+                <div class="listing-item-grid_title">
+                  <h3><a href="listing.html">台南</a></h3>
+                  <p>
+                    Constant care and attention to the patients makes good
+                    record
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--  listing-item-grid end  -->
+            <!--  listing-item-grid  -->
+            <div class="col-sm-4">
+              <div class="listing-item-grid">
+                <div
+                  class="bg"
+                  data-bg="./_html/assets/css/img/kaohsiung.jpg"
+                ></div>
+                <div class="d-gr-sec"></div>
+                <div class="listing-counter color2-bg">
+                  <span>12 </span> Locations
+                </div>
+                <div class="listing-item-grid_title">
+                  <h3><a href="listing.html">高雄</a></h3>
+                  <p>
+                    Constant care and attention to the patients makes good
+                    record
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--  listing-item-grid end  -->
+            <!--  listing-item-grid  -->
+            <div class="col-sm-8">
+              <div class="listing-item-grid">
+                <div
+                  class="bg"
+                  data-bg="./_html/assets/css/img/guifan.jpg"
+                ></div>
+                <div class="d-gr-sec"></div>
+                <div class="listing-counter color2-bg">
+                  <span>33 </span> Locations
+                </div>
+                <div class="listing-item-grid_title">
+                  <h3><a href="listing.html">九份</a></h3>
+                  <p>
+                    Constant care and attention to the patients makes good
+                    record
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--  listing-item-grid end  -->
+          </div>
+        </div>
+			</section>
+
 			<!-- ============================ Call To Action ================================== -->
 			<section class="bg-primary call-to-act-wrap">
 				<div class="container">
@@ -1200,5 +1329,16 @@
 		<!-- ============================================================== -->
 		<!-- This page plugins -->
 		<!-- ============================================================== -->
+
+		<script>
+      // Background image ------------------
+      var elements = document.querySelectorAll(".bg");
+      elements.forEach(function (element) {
+        var bg = element.getAttribute("data-bg");
+        if (bg) {
+          element.style.backgroundImage = "url(" + bg + ")";
+        }
+      });
+    </script>
 	</body>
 </html>
