@@ -1,3 +1,5 @@
+// 這份正常不太會用到
+
 // sidebar load
 $("#sidebar").load("adminSidebar.html");
 
