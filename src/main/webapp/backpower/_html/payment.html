@@ -431,7 +431,7 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12">
 							
-							<h2 class="ipt-title">Payment Methode</h2>
+							<h2 class="ipt-title">購票確認</h2>
 							<span class="ipn-subtitle">Pay your payment</span>
 							
 						</div>
@@ -451,9 +451,9 @@
 								
 								<div class="checkout-head">
 									<ul>
-										<li class="active"><span><i class="fa-solid fa-check"></i></span>Customer Detail</li>
-										<li><span>2</span>Payment Information</li>
-										<li><span>3</span>Confirmation!</li>
+										<li class="active"><span><i class="fa-solid fa-check"></i></span>基本資訊</li>
+										<li><span>2</span>付款資訊</li>
+										<li><span>3</span>完成訂購</li>
 									</ul>
 								</div>
 								
@@ -461,19 +461,19 @@
 									<div class="row">
 								
 										<div class="col-lg-12 col-md-12 col-sm-12">
-											<h4 class="mb-3">Billing Detail</h4>
+											<h4 class="mb-3">基本資料</h4>
 										</div>
 										
 										<div class="col-lg-6 col-md-6 col-sm-12">
 											<div class="form-group">
-												<label>First Name<i class="req">*</i></label>
+												<label>姓氏<i class="req">*</i></label>
 												<input type="text" class="form-control" value="Shaurya">
 											</div>
 										</div>
 										
 										<div class="col-lg-6 col-md-6 col-sm-12">
 											<div class="form-group">
-												<label>Last Name<i class="req">*</i></label>
+												<label>名子<i class="req">*</i></label>
 												<input type="text" class="form-control" value="Preet">
 											</div>
 										</div>
@@ -487,17 +487,17 @@
 										
 										<div class="col-lg-6 col-md-6 col-sm-12">
 											<div class="form-group">
-												<label>Phone</label>
-												<input type="text" class="form-control" value="780 052 2177">
+												<label>電話<i class="req">*</i></label>
+												<input type="text" class="form-control" value="0912-345-678">
 											</div>
 										</div>
 										
 										<div class="col-lg-6 col-md-6 col-sm-12">
 											<div class="form-group">
-												<label>Country<i class="req">*</i></label>
+												<label>國家/<i class="req">*</i></label>
 												<select id="country" class="form-control">
 													<option value="">&nbsp;</option>
-													<option value="1">United State</option>
+													<option value="1">Taiwan</option>
 													<option value="2">United kingdom</option>
 													<option value="3">India</option>
 													<option value="4">Canada</option>
@@ -507,7 +507,7 @@
 										
 										<div class="col-lg-6 col-md-6 col-sm-12">
 											<div class="form-group">
-												<label>City<i class="req">*</i></label>
+												<label>地區<i class="req">*</i></label>
 												<select id="cities" class="form-control">
 													<option value="">&nbsp;</option>
 													<option value="1">Canada, USA</option>
@@ -520,7 +520,7 @@
 										
 										<div class="col-lg-12 col-md-12 col-sm-12">
 											<div class="form-group">
-												<label>Special Instruction</label>
+												<label>特殊需求</label>
 												<textarea class="form-control"></textarea>
 											</div>
 										</div>										
@@ -528,13 +528,13 @@
 										<div class="col-lg-6 col-md-6 col-sm-12">
 											<div class="form-group">
 												<input id="a-2" class="form-check-input" name="a-2" type="checkbox">
-												<label for="a-2" class="form-check-label">Create An Account</label>
+												<label for="a-2" class="form-check-label">成為會員</label>
 											</div>
 										</div>
 										
 										<div class="col-lg-12 col-md-12 col-sm-12">
 											<div class="form-group text-center">
-												<a href="#" class="btn btn-primary rounded">Next Step</a>
+												<a href="#" class="btn btn-primary rounded">下一步</a>
 											</div>
 										</div>
 										
@@ -548,9 +548,9 @@
 								
 								<div class="checkout-head">
 									<ul>
-										<li><span><i class="fa-solid fa-check"></i></span>Customer Detail</li>
-										<li class="active"><span>2</span>Payment Information</li>
-										<li><span>3</span>Confirmation!</li>
+										<li><span><i class="fa-solid fa-check"></i></span>基本資訊</li>
+										<li class="active"><span>2</span>付款資訊</li>
+										<li><span>3</span>完成訂購</li>
 									</ul>
 								</div>
 								
@@ -558,7 +558,7 @@
 									<div class="row mb-5">
 								
 										<div class="col-lg-12 col-md-12 col-sm-12">
-											<h4 class="mb-3">Payment Information</h4>
+											<h4 class="mb-3">付款資訊</h4>
 										</div>
 										
 										<div class="col-lg-6 col-md-6 col-sm-12">
@@ -574,7 +574,7 @@
 											<div class="switchbtn paying">
 												<input id="pay-3" class="switchbtn-checkbox" type="radio" value="2" name="pay-2">
 												<label class="switchbtn-label" for="pay-3">
-													Pay with PayPal
+													Pay with LinePay
 												</label>
 											</div>
 										</div>
@@ -629,6 +629,10 @@
 											</div>
 										</div>
 										
+										<!-- ---------------------------- -->
+										<div id="linepay-image" style="display: none;">
+											<img src="./your-linepay-image-url.jpg.jfif" alt="LinePay Image" class="img-fluid">
+										</div>
 									</div>
 								</div>
 								
@@ -636,6 +640,14 @@
 							
 							<!-- 2st Step Checkout -->
 							<div class="checkout-wrap">
+								
+								<div class="checkout-head">
+									<ul>
+										<li><span><i class="fa-solid fa-check"></i></span>基本資訊</li>
+										<li><span><i class="fa-solid fa-check"></i></span>付款資訊</li>
+										<li class="active"><span>3</span>完成訂購</li>
+									</ul>
+								</div>
 								
 								<div class="checkout-head">
 									<div class="success-message">
@@ -1058,6 +1070,30 @@
 		
 		<script src="assets/js/dropzone.js"></script>
 		<!-- New Js -->
-
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				// 取得相關元素
+				const creditCardFields = document.querySelector('.row'); // 信用卡表單容器
+				const linePayImage = document.getElementById('linepay-image'); // LinePay 圖片容器
+				const payWithCreditCard = document.getElementById('pay-2'); // "Pay with Credit Card" 單選按鈕
+				const payWithLinePay = document.getElementById('pay-3'); // "Pay with LinePay" 單選按鈕
+		
+				// 監聽 "Pay with Credit Card" 的選擇
+				payWithCreditCard.addEventListener('change', function () {
+					if (this.checked) {
+						creditCardFields.style.display = 'block'; // 顯示信用卡表單
+						linePayImage.style.display = 'none'; // 隱藏 LinePay 圖片
+					}
+				});
+		
+				// 監聽 "Pay with LinePay" 的選擇
+				payWithLinePay.addEventListener('change', function () {
+					if (this.checked) {
+						creditCardFields.style.display = 'none'; // 隱藏信用卡表單
+						linePayImage.style.display = 'block'; // 顯示 LinePay 圖片
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
