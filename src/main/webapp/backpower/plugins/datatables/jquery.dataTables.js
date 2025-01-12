@@ -11580,7 +11580,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sNext": "Next",
+				"sNext": "下一頁",
 	
 	
 				/**
@@ -11603,7 +11603,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sPrevious": "Previous"
+				"sPrevious": "上一頁"
 			},
 	
 			/**
@@ -11658,7 +11658,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+			"sInfo": "顯示 _START_ 至 _END_ 共 _TOTAL_ 筆",
 	
 	
 			/**
