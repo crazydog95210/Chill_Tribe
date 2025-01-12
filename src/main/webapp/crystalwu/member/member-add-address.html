@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Resido - Residence & Real Estate HTML Template</title>
+
+<!-- Custom CSS -->
+<link href="../_html/assets/css/styles.css" rel="stylesheet">
+
+<!-- Custom Color Option -->
+<link href="../_html/assets/css/colors.css" rel="stylesheet">
+
+<!-- Custom CSS - 不是模板提供的 -->
+<link href="../css/front-desk.css" rel="stylesheet">
+
+</head>
+
+<body class="blue-skin">
+
+	<nav id="chill-header"></nav>
+
+
+	<!-- 主內容-我的帳戶-個人資料 -->
+	<div class="col-lg-9 col-md-12">
+
+
+		<div id="main-content-placeholder" class="">
+
+			<!-- Location -->
+			<div class="form-submit">
+				<h3>新增地址</h3>
+				<div class="submit-section">
+					<div class="row">
+
+						<div class="form-group col-md-6">
+							<label>郵遞區號</label> <input type="text" id="zipcode"
+								class="form-control simple" readonly>
+						</div>
+
+						<div class="form-group col-md-6">
+							<label>縣市</label> <span class="input-required">*</span> <select
+								id="city" class="form-control"></select>
+						</div>
+
+						<div class="form-group col-md-6">
+							<label>鄉鎮市區</label> <span class="input-required">*</span> <select
+								id="districts" class="form-control"></select>
+						</div>
+
+						<div class="form-group col-md-6">
+							<label>地址</label> <span class="input-required">*</span> <input
+								type="text" class="form-control">
+						</div>
+
+						<div class="form-group col-md-6">
+							<label>標籤</label> <span style="font-size: 10px;">(例如：住家、公司、宿舍)</span>
+							<input type="text" class="form-control">
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Basic Information -->
+
+			<div class="form-submit">
+				<div class="submit-section">
+					<div class="row">
+
+						<div class="form-group col-lg-12 col-md-12"
+							style="display: flex; justify-content: flex-end;">
+							<button class="btn btn-primary rounded px-3" type="button">送出</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	</div>
+	</div>
+	</section>
+	<!-- ============================ User Dashboard End ================================== -->
+
+
+	</div>
+	<!-- ============================================================== -->
+	<!-- End Wrapper -->
+	<!-- ============================================================== -->
+
+
+	<!-- ============================================================== -->
+	<!-- All Jquery -->
+	<!-- ============================================================== -->
+	<script src="../_html/assets/js/jquery.min.js"></script>
+	<script src="../_html/assets/js/popper.min.js"></script>
+	<script src="../_html/assets/js/bootstrap.min.js"></script>
+	<script src="../_html/assets/js/rangeslider.js"></script>
+	<script src="../_html/assets/js/select2.min.js"></script>
+	<script src="../_html/assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="../_html/assets/js/slick.js"></script>
+	<script src="../_html/assets/js/slider-bg.js"></script>
+	<script src="../_html/assets/js/lightbox.js"></script>
+	<script src="../_html/assets/js/imagesloaded.js"></script>
+
+	<script src="../_html/assets/js/custom.js"></script>
+	<!-- ============================================================== -->
+
+	<!-- 應該一併寫在下面的script 就可以 -->
+	<!-- import member.js -->
+	<!-- <script src="../member/js/member.js"></script> -->
+
+	<!-- This page plugins -->
+	<!-- ============================================================== -->
+
+	<!-- 將內容插入chill-header.html 的主要內容標籤 -->
+	<script>
+		$(document).ready(function() {
+			// 先儲存主要內容
+			const mainContent = $("#main-content-placeholder").detach();
+			// console.log(mainContent);
+
+			// 載入模板並在完成後插入主內容
+			$("#chill-header").load("chill-header.html", function() {
+				$(".dashboard-wraper").html(mainContent);
+
+				$(window).trigger('load');
+			});
+		});
+	</script>
+
+
+	<script>
+		function openFilterSearch() {
+			document.getElementById("filter_search").style.display = "block";
+		}
+		function closeFilterSearch() {
+			document.getElementById("filter_search").style.display = "none";
+		}
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			$("#showbutton").click(function() {
+				$("#showing").slideToggle("slow");
+			});
+		});
+	</script>
+
+	<!-- ============================地址選單的js============================== -->
+	<script src="../member/js/address_form.js"></script>
+
+
+
+
+
+</body>
+
+</html>
