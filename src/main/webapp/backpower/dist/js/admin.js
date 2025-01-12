@@ -1,2 +1,2 @@
 // sidebar load
-$("#sidebar").load("adminSdebar.html");
+$("#sidebar").load("adminSidebar.html");
