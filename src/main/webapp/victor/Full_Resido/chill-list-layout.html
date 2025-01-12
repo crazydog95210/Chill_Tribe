@@ -138,7 +138,7 @@
 						
 								<div class="col-lg-3 col-md-6 col-sm-12 order-lg-3 order-md-2 col-sm-6 pe-0">
 									<div class="shorting-right">
-										<label class="me-2">依價格排序:</label>
+										<label class="me-2">篩選:</label>
 										<div class="shorting-by border rounded">
 											<select id="shorty" class="form-control rounded">
 												<option value="">&nbsp;</option>
@@ -1024,6 +1024,13 @@
 		<!-- ============================================================== -->
 		<!-- This page plugins -->
 		<!-- ============================================================== -->
-
+		<script>
+			$(document).ready(function() {
+    	$('#shorty').select2({
+        placeholder: "依價格排序", // 修改為你想顯示的 placeholder 文字
+        allowClear: true // 允許清除選擇
+			});
+		});
+		</script>
 	</body>
 </html>
