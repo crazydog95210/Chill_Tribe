@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Resido - Residence & Real Estate HTML Template</title>
+
+	<!-- Custom CSS -->
+	<link href="./_html/assets/css/styles.css" rel="stylesheet">
+
+	<!-- Custom Color Option -->
+	<link href="./_html/assets/css/chill-header.css" rel="stylesheet">
+
+	<!-- Custom Color Option -->
+	<link href="./_html/assets/css/chill-list-layout.css" rel="stylesheet">
+
+</head>
+
+<body class="blue-skin">
+
+	<!-- ============================================================== -->
+	<!-- Preloader - style you can find in spinners.css -->
+	<!-- ============================================================== -->
+	<div id="preloader">
+		<div class="preloader"><span></span><span></span></div>
+	</div>
+
+	<!-- ============================================================== -->
+	<!-- Main wrapper - style you can find in pages.scss -->
+	<!-- ============================================================== -->
+	<div id="main-wrapper">
+
+		<!-- ============================================================== -->
+		<!-- Top header  -->
+		<!-- ============================================================== -->
+		<!-- Start Navigation -->
+
+		<div class="header header-light">
+			<div class="container">
+				<nav id="navigation" class="navigation navigation-landscape"></nav>
+			</div>
+		</div>
+
+		<!-- End Navigation -->
+
+		<!-- ============================================================== -->
+		<!-- Top header -->
+		<!-- ============================================================== -->
+		<!-- ============================ All Property ================================== -->
+		<section class="gray-simple">
+			<div class="container">
+				<p>個別頁面的內容放這裡!!!</p>
+				
+			</div>
+			
+			 
+		</section>
+		<!-- ============================ All Property ================================== -->
+
+		<!-- 一起算在Footer -->
+		<!-- ============================ Call To Action ================================== -->
+		<section id="cta" class="bg-primary call-to-act-wrap"></section>
+		<!-- ============================ Call To Action End ================================== -->
+
+		<!-- ============================ Footer Start ================================== -->
+		<footer id="footer" class="dark-footer skin-dark-footer"></footer>
+		<!-- ============================ Footer End ================================== -->
+
+		<!-- 登入登出拔掉 -->
+		<!-- Log In Modal -->
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal"
+			aria-hidden="true"></div>
+		<!-- End Modal -->
+
+		<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+
+
+	</div>
+	<!-- ============================================================== -->
+	<!-- End Wrapper -->
+	<!-- ============================================================== -->
+
+	<!-- ============================================================== -->
+	<!-- All Jquery -->
+	<!-- ============================================================== -->
+	<script src="./_html/assets/js/jquery.min.js"></script>
+	<script src="./_html/assets/js/popper.min.js"></script>
+	<script src="./_html/assets/js/bootstrap.min.js"></script>
+	<script src="./_html/assets/js/rangeslider.js"></script>
+	<script src="./_html/assets/js/select2.min.js"></script>
+	<script src="./_html/assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="./_html/assets/js/slick.js"></script>
+	<script src="./_html/assets/js/slider-bg.js"></script>
+	<script src="./_html/assets/js/lightbox.js"></script>
+	<script src="./_html/assets/js/imagesloaded.js"></script>
+
+	<script>
+		$("#navigation").load("chilltribe-frontend-nav.html");
+		$("#login").load("chilltribe-frontend-login.html");
+		$("#cta").load("chilltribe-frontend-cta.html");
+		$("#footer").load("chilltribe-frontend-footer.html");
+	</script>
+
+
+	<script src="./_html/assets/js/custom.js"></script>
+	<!-- ============================================================== -->
+	<!-- This page plugins -->
+	<!-- ============================================================== -->
+	<script>
+		$(document).ready(function () {
+			$('#shorty').select2({
+				placeholder: "依價格排序", // 修改為你想顯示的 placeholder 文字
+				allowClear: true // 允許清除選擇
+			});
+		});
+	</script>
+
+</body>
+
+</html>

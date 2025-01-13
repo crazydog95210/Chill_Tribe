@@ -30,8 +30,8 @@
             <!-- Top header  -->
             <!-- ============================================================== -->
             <!-- Start Navigation -->
-
-			<div class="header header-light">
+					<div id="header-container"></div>
+			<!-- <div class="header header-light">
 				<div class="container">
 					<nav id="navigation" class="navigation navigation-landscape">
 						<div class="nav-header">
@@ -100,7 +100,7 @@
 						</div>
 					</nav>
 				</div>
-			</div>
+			</div> -->
 			
 			<!-- End Navigation -->
 			
@@ -181,7 +181,7 @@
 			<!-- ============================ Footer End ================================== -->
 			
 			<!-- Log In Modal -->
-			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true">
+			<!-- <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
 					<div class="modal-content" id="registermodal">
 						<span class="mod-close" data-bs-dismiss="modal" aria-hidden="true">
@@ -249,7 +249,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
+			<div id="log-in-container"></div>
 			<!-- End Modal -->
 			
 			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
@@ -278,6 +279,12 @@
 		<!-- ============================================================== -->
 		<!-- This page plugins -->
 		<!-- ============================================================== -->
-
+		<script>
+			// 使用 jQuery 的 load() 方法載入外部 HTML
+			$(document).ready(function () {
+				$('#header-container').load('header.html');
+				$('#log-in-container').load('log-in-model.html');
+			});
+		</script>
 	</body>
 </html>
