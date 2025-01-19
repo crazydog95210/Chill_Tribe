@@ -9,11 +9,24 @@
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet">
 		
+		
 		<!-- Custom Color Option -->
 		<link href="assets/css/colors.css" rel="stylesheet">
-		
+		<style>
+			#done {
+  			display: none; 
+			}
+
+		</style>
     </head>
+	 <!-- Top header Start  -->
+	 <header id="header"> </header>
+	 <!-- Top header End  -->
+	<!-- ============================ 內容放這(開始) ================================== -->
+	<section>
+		<body class="blue-skin">
 	
+<<<<<<< HEAD
     <body class="blue-skin">
 		<script>
             // 載入 header.html
@@ -960,109 +973,601 @@
 						</div>
 					</div>
 				</div>
+=======
+			<!-- ============================================================== -->
+		   <!-- Preloader - style you can find in spinners.css -->
+		   <!-- ============================================================== -->
+		   <div id="preloader"><div class="preloader"><span></span><span></span></div></div>
+		   
+		   <!-- ============================================================== -->
+		   <!-- Main wrapper - style you can find in pages.scss -->
+		   <!-- ============================================================== -->
+		   <div id="main-wrapper">
+	
+			   <div class="clearfix"></div>
+			   
+			   <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+				   <div class="offcanvas-header">
+					   <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Compare & Selected Property</h5>
+					   <a href="#" data-bs-dismiss="offcanvas" aria-label="Close">
+						   <span class="svg-icon text-primary svg-icon-2hx">
+							   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								   <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="currentColor"/>
+								   <rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="currentColor"/>
+								   <rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="currentColor"/>
+							   </svg>
+						   </span>
+					   </a>
+				   </div>
+				   <div class="offcanvas-body">
+					   <ul class="nav nav-pills sider_tab mb-3" id="pills-tab" role="tablist">
+						   <li class="nav-item" role="presentation">
+							   <button class="nav-link active" id="pills-compare-tab" data-bs-toggle="pill" data-bs-target="#pills-compare" type="button" role="tab" aria-controls="pills-compare" aria-selected="true">Compare Property</button>
+						   </li>
+						   <li class="nav-item" role="presentation">
+							   <button class="nav-link" id="pills-saved-tab" data-bs-toggle="pill" data-bs-target="#pills-saved" type="button" role="tab" aria-controls="pills-saved" aria-selected="false">Saved Property</button>
+						   </li>
+					   </ul>
+					   <div class="tab-content" id="pills-tabContent">
+						   <div class="tab-pane fade show active" id="pills-compare" role="tabpanel" aria-labelledby="pills-compare-tab" tabindex="0">
+							   <div class="sidebar_featured_property">
+										   
+								   <!-- List Sibar Property -->
+								   <div class="sides_list_property p-2">
+									   <div class="sides_list_property_thumb">
+										   <img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+									   </div>
+									   <div class="sides_list_property_detail">
+										   <h4><a href="single-property-1.html">Loss vengel New Apartment</a></h4>
+										   <span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Sans Fransico</span>
+										   <div class="lists_property_price">
+											   <div class="lists_property_types">
+												   <div class="property_types_vlix sale">For Sale</div>
+											   </div>
+											   <div class="lists_property_price_value">
+												   <h4 class="text-primary">$4,240</h4>
+											   </div>
+										   </div>
+									   </div>
+								   </div>
+								   
+								   <!-- List Sibar Property -->
+								   <div class="sides_list_property p-2">
+									   <div class="sides_list_property_thumb">
+										   <img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+									   </div>
+									   <div class="sides_list_property_detail">
+										   <h4><a href="single-property-1.html">Montreal Quriqe Apartment</a></h4>
+										   <span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Liverpool, London</span>
+										   <div class="lists_property_price">
+											   <div class="lists_property_types">
+												   <div class="property_types_vlix">For Rent</div>
+											   </div>
+											   <div class="lists_property_price_value">
+												   <h4 class="text-primary">$7,380</h4>
+											   </div>
+										   </div>
+									   </div>
+								   </div>
+								   
+								   <!-- List Sibar Property -->
+								   <div class="sides_list_property p-2">
+									   <div class="sides_list_property_thumb">
+										   <img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+									   </div>
+									   <div class="sides_list_property_detail">
+										   <h4><a href="single-property-1.html">Curmic Studio For Office</a></h4>
+										   <span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Montreal, Canada</span>
+										   <div class="lists_property_price">
+											   <div class="lists_property_types">
+												   <div class="property_types_vlix buy">For Buy</div>
+											   </div>
+											   <div class="lists_property_price_value">
+												   <h4 class="text-primary">$8,730</h4>
+											   </div>
+										   </div>
+									   </div>
+								   </div>
+								   
+								   <!-- List Sibar Property -->
+								   <div class="sides_list_property p-2">
+									   <div class="sides_list_property_thumb">
+										   <img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+									   </div>
+									   <div class="sides_list_property_detail">
+										   <h4><a href="single-property-1.html">Montreal Quebec City</a></h4>
+										   <span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Sreek View, New York</span>
+										   <div class="lists_property_price">
+											   <div class="lists_property_types">
+												   <div class="property_types_vlix">For Rent</div>
+											   </div>
+											   <div class="lists_property_price_value">
+												   <h4 class="text-primary">$6,240</h4>
+											   </div>
+										   </div>
+									   </div>
+								   </div>
+								   
+								   <div class="input-group">
+									   <a href="compare-property.html" class="btn btn-light-primary fw-medium full-width">View & Compare</a>
+								   </div>
+							   </div>	
+						   </div>
+						   <div class="tab-pane fade" id="pills-saved" role="tabpanel" aria-labelledby="pills-saved-tab" tabindex="0">
+							   <div class="sidebar_featured_property">
+										   
+								   <!-- List Sibar Property -->
+								   <div class="sides_list_property p-2">
+									   <div class="sides_list_property_thumb">
+										   <img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+									   </div>
+									   <div class="sides_list_property_detail">
+										   <h4><a href="single-property-1.html">Loss vengel New Apartment</a></h4>
+										   <span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Sans Fransico</span>
+										   <div class="lists_property_price">
+											   <div class="lists_property_types">
+												   <div class="property_types_vlix sale">For Sale</div>
+											   </div>
+											   <div class="lists_property_price_value">
+												   <h4 class="text-primary">$4,240</h4>
+											   </div>
+										   </div>
+									   </div>
+								   </div>
+								   
+								   <!-- List Sibar Property -->
+								   <div class="sides_list_property p-2">
+									   <div class="sides_list_property_thumb">
+										   <img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+									   </div>
+									   <div class="sides_list_property_detail">
+										   <h4><a href="single-property-1.html">Montreal Quriqe Apartment</a></h4>
+										   <span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Liverpool, London</span>
+										   <div class="lists_property_price">
+											   <div class="lists_property_types">
+												   <div class="property_types_vlix">For Rent</div>
+											   </div>
+											   <div class="lists_property_price_value">
+												   <h4 class="text-primary">$7,380</h4>
+											   </div>
+										   </div>
+									   </div>
+								   </div>
+								   
+								   <!-- List Sibar Property -->
+								   <div class="sides_list_property p-2">
+									   <div class="sides_list_property_thumb">
+										   <img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+									   </div>
+									   <div class="sides_list_property_detail">
+										   <h4><a href="single-property-1.html">Curmic Studio For Office</a></h4>
+										   <span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Montreal, Canada</span>
+										   <div class="lists_property_price">
+											   <div class="lists_property_types">
+												   <div class="property_types_vlix buy">For Buy</div>
+											   </div>
+											   <div class="lists_property_price_value">
+												   <h4 class="text-primary">$8,730</h4>
+											   </div>
+										   </div>
+									   </div>
+								   </div>
+								   
+								   <!-- List Sibar Property -->
+								   <div class="sides_list_property p-2">
+									   <div class="sides_list_property_thumb">
+										   <img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+									   </div>
+									   <div class="sides_list_property_detail">
+										   <h4><a href="single-property-1.html">Montreal Quebec City</a></h4>
+										   <span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Sreek View, New York</span>
+										   <div class="lists_property_price">
+											   <div class="lists_property_types">
+												   <div class="property_types_vlix">For Rent</div>
+											   </div>
+											   <div class="lists_property_price_value">
+												   <h4 class="text-primary">$6,240</h4>
+											   </div>
+										   </div>
+									   </div>
+								   </div>
+								   
+								   <div class="input-group">
+									   <a href="#" class="btn btn-light-primary fw-medium full-width">View & Compare</a>
+								   </div>
+							   </div>
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+			   <!-- ============================================================== -->
+			   <!-- Top header  -->
+			   <!-- ============================================================== -->
+			   
+			   <!-- ============================ Page Title Start================================== -->
+			   <div class="page-title">
+				   <div class="container">
+					   <div class="row">
+						   <div class="col-lg-12 col-md-12">
+							   
+							   <h2 class="ipt-title">購票確認</h2>
+							   <span class="ipn-subtitle">Pay your payment</span>
+							   
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+			   <!-- ============================ Page Title End ================================== -->
+   
+			   <!-- =================== Sidebar Search ==================== -->
+			   <section class="gray">
+				   <div class="container">
+					   <div class="row">
+						   <div class="col-lg-9 col-md-12 form-submit">
+							   
+							
+>>>>>>> main
 				
-				<div class="footer-bottom">
-					<div class="container">
-						<div class="row align-items-center">
-							
-							<div class="col-lg-6 col-md-6">
-								<p class="mb-0">© 2025 Resido. Designd By <a href="https://themezhub.com">Themez Hub</a> All Rights Reserved</p>
-							</div>
-							
-							<div class="col-lg-6 col-md-6 text-right">
-								<ul class="footer-bottom-social">
-									<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-									<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</footer>
-			<!-- ============================ Footer End ================================== -->
-			
-			<!-- Log In Modal -->
-			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
-					<div class="modal-content" id="registermodal">
-						<span class="mod-close" data-bs-dismiss="modal" aria-hidden="true">
-							<span class="svg-icon text-primary svg-icon-2hx">
-								<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="currentColor"/>
-									<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="currentColor"/>
-									<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="currentColor"/>
-								</svg>
-							</span>
-						</span>
-						<div class="modal-body">
-							<h4 class="modal-header-title">Log In</h4>
-							<div class="d-flex align-items-center justify-content-center mb-3">
-								<span class="svg-icon text-primary svg-icon-2hx">
-									<svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15.8797 15.375C15.9797 15.075 15.9797 14.775 15.9797 14.475C15.9797 13.775 15.7797 13.075 15.4797 12.475C14.7797 11.275 13.4797 10.475 11.9797 10.475C11.7797 10.475 11.5797 10.475 11.3797 10.575C7.37971 11.075 4.67971 14.575 2.57971 18.075L10.8797 3.675C11.3797 2.775 12.5797 2.775 13.0797 3.675C13.1797 3.875 13.2797 3.975 13.3797 4.175C15.2797 7.575 16.9797 11.675 15.8797 15.375Z" fill="currentColor"/>
-										<path opacity="0.3" d="M20.6797 20.6749C16.7797 20.6749 12.3797 20.275 9.57972 17.575C10.2797 18.075 11.0797 18.375 11.9797 18.375C13.4797 18.375 14.7797 17.5749 15.4797 16.2749C15.6797 15.9749 15.7797 15.675 15.7797 15.375V15.2749C16.8797 11.5749 15.2797 7.47495 13.2797 4.07495L21.6797 18.6749C22.2797 19.5749 21.6797 20.6749 20.6797 20.6749ZM8.67972 18.6749C8.17972 17.8749 7.97972 16.975 7.77972 15.975C7.37972 13.575 8.67972 10.775 11.3797 10.375C7.37972 10.875 4.67972 14.375 2.57972 17.875C2.47972 18.075 2.27972 18.375 2.17972 18.575C1.67972 19.475 2.27972 20.475 3.27972 20.475H10.3797C9.67972 20.175 9.07972 19.3749 8.67972 18.6749Z" fill="currentColor"/>
-									</svg>
-								</span>
-							</div>
-							<div class="login-form">
-								<form>
-								
-									<div class="form-floating mb-3">
-										<input type="email" class="form-control" placeholder="name@example.com">
-										<label>Email address</label>
-									</div>
-									
-									<div class="form-floating mb-3">
-									  <input type="password" class="form-control" placeholder="Password">
-									  <label>Password</label>
-									</div>
-									
-									<div class="form-group mb-3">
-										<div class="d-flex align-items-center justify-content-between">
-											<div class="flex-shrink-0 flex-first">
-												<div class="form-check form-check-inline">
-													<input class="form-check-input" type="checkbox" id="save-pass" value="option1">
-													<label class="form-check-label" for="save-pass">Save Password</label>
-												</div>	
-											</div>
-											<div class="flex-shrink-0 flex-first">
-												<a href="#" class="link fw-medium">Forgot Password?</a>	
-											</div>
-										</div>
-									</div>
-									
-									<div class="form-group">
-										<button type="button" class="btn btn-lg btn-primary fw-medium full-width rounded-2">LogIn</button>
-									</div>
-								
-								</form>
-							</div>
-							<div class="modal-divider"><span>Or login via</span></div>
-							<div class="social-login mb-3">
-								<ul>
-									<li><a href="#" class="btn connect-fb"><i class="ti-facebook"></i>Facebook</a></li>
-									<li><a href="#" class="btn connect-google"><i class="ti-google"></i>Google+</a></li>
-								</ul>
-							</div>
-							<div class="text-center">
-								<p class="mt-4">Have't Any Account? <a href="create-account.html" class="link fw-medium">Acreate An Account</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Modal -->
-			
-			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
-			
+							   <!-- 2st Step Checkout -->
+							   <div class="checkout-wrap">
+								   
+								   <div class="checkout-head">
+									   <ul>
+										   <li><span><i class="fa-solid fa-check"></i></span>基本資訊</li>
+										   <li class="active"><span>2</span>付款資訊</li>
+										   <li><span>3</span>完成訂購</li>
+									   </ul>
+								   </div>
+								   
+								   <div class="checkout-body">
+									   <div class="row mb-5">
+								   
+										   <div class="col-lg-12 col-md-12 col-sm-12">
+											   <h4 class="mb-3">付款資訊</h4>
+										   </div>
+										   
+										   <div class="col-lg-6 col-md-6 col-sm-12">
+											   <div class="switchbtn paying">
+												   <input id="pay-2" class="switchbtn-checkbox" type="radio" value="2" name="pay-2" checked>
+												   <label class="switchbtn-label" for="pay-2">
+													   Pay with Credit card
+												   </label>
+											   </div>
+										   </div>
+										   
+										   <div class="col-lg-6 col-md-6 col-sm-12">
+											   <div class="switchbtn paying">
+												   <input id="pay-3" class="switchbtn-checkbox" type="radio" value="2" name="pay-2">
+												   <label class="switchbtn-label" for="pay-3">
+													   Pay with LinePay
+												   </label>
+											   </div>
+										   </div>
+									   </div>
+									   
+									   <div class="row">
+										   <div class="col-lg-6 col-md-6 col-sm-12">
+											   <div class="form-group" id="name">
+												   <label>Card Holder Name</label>
+												   <input type="text" class="form-control">
+											   </div>
+										   </div>
+										   
+										   <div class="col-lg-6 col-md-6 col-sm-12" id="number">
+											   <div class="form-group">
+												   <label>Card Number</label>
+												   <input type="text" class="form-control">
+											   </div>
+										   </div>									
+									   
+										   <div class="col-lg-5 col-md-5 col-sm-6">
+											   <div class="form-group" id="Month">
+												   <label>Expire Month</label>
+												   <input type="text" class="form-control">
+											   </div>
+										   </div>
+										   
+										   <div class="col-lg-5 col-md-5 col-sm-6">
+											   <div class="form-group" id="Year">
+												   <label>Expire Year</label>
+												   <input type="text" class="form-control">
+											   </div>
+										   </div>
+										   
+										   <div class="col-lg-2 col-md-2 col-sm-12">
+											   <div class="form-group" id="cvc">
+												   <label>CVC</label>
+												   <input type="text" class="form-control">
+											   </div>
+										   </div>										
+										   
+										   <div class="col-lg-6 col-md-6 col-sm-12">
+											   <div class="form-group">
+												   <input id="a-2" class="form-check-input" name="a-2" type="checkbox">
+												   <label for="a-2" class="form-check-label">By Continuing, you ar'e agree to conditions</label>
+											   </div>
+										   </div>
+										   
+										   <div class="col-lg-12 col-md-12 col-sm-12">
+											   <div class="form-group text-center">
+												   <a href="#" class="btn btn-primary rounded full-width">Confirm Booking</a>
+											   </div>
+										   </div>
+										   <!-- ---------------------------- -->
+										   <div id="linepay-image" style="display: none;">
+											   <img src="./your-linepay-image-url.jpg.jfif" alt="LinePay Image" class="img-fluid">
+										   </div>
+									   </div>
+								   </div>
+								   
+							   </div>
+							   
+							   <!-- 2st Step Checkout -->
+							   <div class="checkout-wrap" ID="done">
+								   
+								   <div class="checkout-head">
+									   <ul>
+										   <li><span><i class="fa-solid fa-check"></i></span>基本資訊</li>
+										   <li><span><i class="fa-solid fa-check"></i></span>付款資訊</li>
+										   <li class="active"><span>3</span>完成訂購</li>
+									   </ul>
+								   </div>
+								   
+								   <div class="checkout-head">
+									   <div class="success-message">
+										   <span class="thumb-check"><i class="fa-solid fa-check-double"></i></span>
+										   <h4>感謝您，您的預訂訂單已確認！</h4>
+										   <p>確認郵件已發送到您的電子郵件，請檢查您的收件箱。</p>
+									   </div>
+								   </div>
+								   
+								   <div class="checkout-body">
+									   
+									   
+									   <div class="row">
+										   <div class="col-md-12 col-lg-12">
+										   
+											<ul class="booking-detail-list">
+												<li>預訂編號/號碼<span>#BK1254872</span></li>
+												<li>名字<span>Shaurya</span></li>
+												<li>姓氏<span>Preet</span></li>
+												<li>電子郵件<span>themezhub@gmail.com</span></li>
+												<li>電話<span>91 235 458 7458</span></li>
+												<li>城市<span>California</span></li>
+												<li>國家<span>United State</span></li>
+												<li>地點<span>New Besil, Liverpool</span></li>
+												<li>郵遞區號<span>215467</span></li>
+											  </ul>
+											   <hr>
+											   
+											   <h4>澎湖花枝丸</h4>
+											   <p>好想吃澎湖花枝丸喔!!!!<br>好想吃澎湖花枝丸喔!!!!<br>好想吃澎湖花枝丸喔!!!!<br>好想吃澎湖花枝丸喔!!!!<br>好想吃澎湖花枝丸喔!!!!<br></p>
+											   
+										   </div>
+									   </div>
+								   </div>
+								   
+							   </div>
+							   
+						   </div>
+						   <!-- Sidebar End -->
+							   
+						   <div class="col-lg-3 col-md-12">
+							   <div class="checkout-side">
+							   
+								   <div class="booking-short">
+									   <img src="https://placehold.co/1200x800" class="img-fluid" alt="" />
+									   <h4>Manali To Paris, London</h4>
+									   <span>Liverpool, London</span>
+								   </div>
+								   
+								   <div class="booking-short-side">
+									   <div class="accordion" id="accordionExample">
+										   <div class="card">
+											   <div class="card-header" id="bookinDet">
+												 <h2 class="mb-0">
+												   <button class="btn btn-link py-0" type="button" data-bs-toggle="collapse" data-bs-target="#bookinSer" aria-expanded="true" aria-controls="bookinSer">
+													 Booking Detail
+												   </button>
+												 </h2>
+											   </div>
+   
+											   <div id="bookinSer" class="collapse show" aria-labelledby="bookinDet" data-parent="#accordionExample">
+												   <div class="card-body">
+													   <ul class="booking-detail-list">
+														   <li>10 May 2020- 20 May 2020</li>
+														   <li>Tour Days<span>5 Days</span></li>
+														   <li>Adults<span>4</span></li>
+														   <li>Children<span>3</span></li>
+													   </ul>
+												   </div>
+											   </div>
+										   </div>
+										   
+										   <div class="card">
+											   <div class="card-header" id="extraFeat">
+												 <h2 class="mb-0">
+												   <button class="btn btn-link py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#extraSer" aria-expanded="false" aria-controls="extraSer">
+													   Extra Features
+												   </button>
+												 </h2>
+											   </div>
+											   <div id="extraSer" class="collapse" aria-labelledby="extraFeat" data-parent="#accordionExample">
+												   <div class="card-body">
+													   <ul class="booking-detail-list">
+														   <li>
+															   <div class="form-check">
+																   <input class="form-check-input" type="checkbox" value="" id="brks">
+																   <label class="form-check-label" for="brks">
+																	   Breakfast
+																   </label>
+															   </div>
+														   </li>
+														   <li>
+															   <div class="form-check">
+																   <input class="form-check-input" type="checkbox" value="" id="rsv">
+																   <label class="form-check-label" for="rsv">
+																	   Rooms Service
+																   </label>
+															   </div>
+														   </li>
+														   <li>
+															   <div class="form-check">
+																   <input class="form-check-input" type="checkbox" value="" id="wifis">
+																   <label class="form-check-label" for="wifis">
+																	   Wifi Free
+																   </label>
+															   </div>
+														   </li>
+														   <li>
+															   <div class="form-check">
+																   <input class="form-check-input" type="checkbox" value="" id="carser">
+																   <label class="form-check-label" for="carser">
+																	   Car Driving
+																   </label>
+															   </div>
+														   </li>
+													   </ul>
+												   </div>
+											   </div>
+											 </div>
+											 
+											 <div class="card">
+											   <div class="card-header" id="CouponCode">
+												 <h2 class="mb-0">
+												   <button class="btn btn-link py-0 h-auto collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#couponcd" aria-expanded="false" aria-controls="couponcd">
+													 Coupon Code
+												   </button>
+												 </h2>
+											   </div>
+											   <div id="couponcd" class="collapse show" aria-labelledby="CouponCode" data-parent="#accordionExample">
+												   <div class="card-body">
+													   <div class="form-group">
+														   <input type="text" class="form-control" placeholder="Code">
+														   <button type="button" class="btn btn-dark full-width mt-2">Apply</button>
+													   </div>
+												   </div>
+											   </div>
+										   </div>
+										   
+										   <div class="card">
+											   <div class="card-header" id="PayMents">
+												 <h2 class="mb-0">
+												   <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payser" aria-expanded="false" aria-controls="payser">
+													 Payment
+												   </button>
+												 </h2>
+											   </div>
+											   <div id="payser" class="collapse" aria-labelledby="PayMents" data-parent="#accordionExample">
+												   <div class="card-body">
+													   <ul class="booking-detail-list">
+														   <li>Sub Total<span>$224</span></li>
+														   <li>Extra Price<span>$70</span></li>
+														   <li>Tax<span>$20</span></li>
+														   <li><b>Pay Ammount</b><span>$314</span></li>
+													   </ul>
+												   </div>
+											   </div>
+										   </div>
+										   
+									   </div>
+								   </div>
+								   
+							   </div>
+						   </div>
+					   </div>
+				   </div>
+			   </section>
+			   <!-- =================== Sidebar Search ==================== -->
+			   
+			   <!-- Log In Modal -->
+			   <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true">
+				   <div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+					   <div class="modal-content" id="registermodal">
+						   <span class="mod-close" data-bs-dismiss="modal" aria-hidden="true">
+							   <span class="svg-icon text-primary svg-icon-2hx">
+								   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									   <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="currentColor"/>
+									   <rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="currentColor"/>
+									   <rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="currentColor"/>
+								   </svg>
+							   </span>
+						   </span>
+						   <div class="modal-body">
+							   <h4 class="modal-header-title">Log In</h4>
+							   <div class="d-flex align-items-center justify-content-center mb-3">
+								   <span class="svg-icon text-primary svg-icon-2hx">
+									   <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										   <path d="M15.8797 15.375C15.9797 15.075 15.9797 14.775 15.9797 14.475C15.9797 13.775 15.7797 13.075 15.4797 12.475C14.7797 11.275 13.4797 10.475 11.9797 10.475C11.7797 10.475 11.5797 10.475 11.3797 10.575C7.37971 11.075 4.67971 14.575 2.57971 18.075L10.8797 3.675C11.3797 2.775 12.5797 2.775 13.0797 3.675C13.1797 3.875 13.2797 3.975 13.3797 4.175C15.2797 7.575 16.9797 11.675 15.8797 15.375Z" fill="currentColor"/>
+										   <path opacity="0.3" d="M20.6797 20.6749C16.7797 20.6749 12.3797 20.275 9.57972 17.575C10.2797 18.075 11.0797 18.375 11.9797 18.375C13.4797 18.375 14.7797 17.5749 15.4797 16.2749C15.6797 15.9749 15.7797 15.675 15.7797 15.375V15.2749C16.8797 11.5749 15.2797 7.47495 13.2797 4.07495L21.6797 18.6749C22.2797 19.5749 21.6797 20.6749 20.6797 20.6749ZM8.67972 18.6749C8.17972 17.8749 7.97972 16.975 7.77972 15.975C7.37972 13.575 8.67972 10.775 11.3797 10.375C7.37972 10.875 4.67972 14.375 2.57972 17.875C2.47972 18.075 2.27972 18.375 2.17972 18.575C1.67972 19.475 2.27972 20.475 3.27972 20.475H10.3797C9.67972 20.175 9.07972 19.3749 8.67972 18.6749Z" fill="currentColor"/>
+									   </svg>
+								   </span>
+							   </div>
+							   <div class="login-form">
+								   <form>
+								   
+									   <div class="form-floating mb-3">
+										   <input type="email" class="form-control" placeholder="name@example.com">
+										   <label>Email address</label>
+									   </div>
+									   
+									   <div class="form-floating mb-3">
+										 <input type="password" class="form-control" placeholder="Password">
+										 <label>Password</label>
+									   </div>
+									   
+									   <div class="form-group mb-3">
+										   <div class="d-flex align-items-center justify-content-between">
+											   <div class="flex-shrink-0 flex-first">
+												   <div class="form-check form-check-inline">
+													   <input class="form-check-input" type="checkbox" id="save-pass" value="option1">
+													   <label class="form-check-label" for="save-pass">Save Password</label>
+												   </div>	
+											   </div>
+											   <div class="flex-shrink-0 flex-first">
+												   <a href="#" class="link fw-medium">Forgot Password?</a>	
+											   </div>
+										   </div>
+									   </div>
+									   
+									   <div class="form-group">
+										   <button type="button" class="btn btn-lg btn-primary fw-medium full-width rounded-2">LogIn</button>
+									   </div>
+								   
+								   </form>
+							   </div>
+							   <div class="modal-divider"><span>Or login via</span></div>
+							   <div class="social-login mb-3">
+								   <ul>
+									   <li><a href="#" class="btn connect-fb"><i class="ti-facebook"></i>Facebook</a></li>
+									   <li><a href="#" class="btn connect-google"><i class="ti-google"></i>Google+</a></li>
+								   </ul>
+							   </div>
+							   <div class="text-center">
+								   <p class="mt-4">Have't Any Account? <a href="create-account.html" class="link fw-medium">Acreate An Account</a></p>
+							   </div>
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+			   <!-- End Modal -->
+			   
+			   <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+			   
+   
+		   </div>
+		   <!-- ============================================================== -->
+		   <!-- End Wrapper -->
+		   <!-- ============================================================== -->
 
-		</div>
-		<!-- ============================================================== -->
-		<!-- End Wrapper -->
-		<!-- ============================================================== -->
+	</section>
+	<!-- ============================ 內容(結束) ================================== -->
+	
+	<!-- ============================ Footer Start ================================== -->
+	<footer id="footer"> </footer>
+	<!-- ============================ Footer End ================================== -->
+	
+    
 
 
 		<!-- ============================================================== -->
@@ -1089,29 +1594,93 @@
 		<!-- New Js -->
 		
 		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				// 取得相關元素
-				const creditCardFields = document.querySelector('.row'); // 信用卡表單容器
-				const linePayImage = document.getElementById('linepay-image'); // LinePay 圖片容器
-				const payWithCreditCard = document.getElementById('pay-2'); // "Pay with Credit Card" 單選按鈕
-				const payWithLinePay = document.getElementById('pay-3'); // "Pay with LinePay" 單選按鈕
-		
-				// 監聽 "Pay with Credit Card" 的選擇
-				payWithCreditCard.addEventListener('change', function () {
-					if (this.checked) {
-						creditCardFields.style.display = 'block'; // 顯示信用卡表單
-						linePayImage.style.display = 'none'; // 隱藏 LinePay 圖片
-					}
-				});
-		
-				// 監聽 "Pay with LinePay" 的選擇
-				payWithLinePay.addEventListener('change', function () {
-					if (this.checked) {
-						creditCardFields.style.display = 'none'; // 隱藏信用卡表單
-						linePayImage.style.display = 'block'; // 顯示 LinePay 圖片
-					}
-				});
+			// 等待文檔加載完成
+			document.addEventListener('DOMContentLoaded', function() {
+    
+    		// 取得支付方式的單選按鈕元素
+    			var payWithCreditCard = document.getElementById('pay-2');
+    			var payWithLinePay = document.getElementById('pay-3');
+
+    		// 取得顯示圖片的區域（LinePay 圖片）
+    			var linepayImage = document.getElementById('linepay-image');
+
+    		// 取得支付欄位（卡片資訊）
+    			var nameField = document.getElementById('name');
+    			var numberField = document.getElementById('number');
+    			var monthField = document.getElementById('Month');
+    			var yearField = document.getElementById('Year');
+    			var cvcField = document.getElementById('cvc');
+
+    		// 當用戶選擇「Pay with Credit card」時
+   	 			payWithCreditCard.addEventListener('change', function() {
+        		// 顯示卡片資訊欄位
+        			nameField.style.display = 'block';
+        			numberField.style.display = 'block';
+        			monthField.style.display = 'block';
+        			yearField.style.display = 'block';
+        			cvcField.style.display = 'block';
+
+        		// 隱藏 LinePay 圖片
+        		linepayImage.style.display = 'none';
+    			});
+
+    			// 當用戶選擇「Pay with LinePay」時
+    		payWithLinePay.addEventListener('change', function() {
+        		// 隱藏卡片資訊欄位
+        		nameField.style.display = 'none';
+        		numberField.style.display = 'none';
+        		monthField.style.display = 'none';
+        		yearField.style.display = 'none';
+        		cvcField.style.display = 'none';
+
+        	// 顯示 LinePay 圖片
+        		linepayImage.style.display = 'block';
+   	 			});
+
 			});
+
+
+			
+            // 載入 header.html
+            fetch('header.html')  // 這行會發送一個 GET 請求，請求 `header.html` 這個檔案
+            .then(response => response.text())  // 當響應返回時，將其轉換為文字格式（即 HTML 內容）
+            .then(data => {  // 當轉換完成後，這個 `data` 就是 `header.html` 的內容
+                document.getElementById('header').innerHTML = data;  // 將獲得的 HTML 內容插入到 ID 為 'header' 的元素中
+            })
+            .catch(error => console.error('Error loading header:', error));  // 如果過程中有任何錯誤，這裡會捕捉到錯誤並打印出錯誤訊息
+
+            // 載入 footer.html
+            fetch('footer.html')  // 這行會發送一個 GET 請求，請求 `footer.html` 這個檔案
+            .then(response => response.text())  // 當響應返回時，將其轉換為文字格式（即 HTML 內容）
+            .then(data => {  // 當轉換完成後，這個 `data` 就是 `footer.html` 的內容
+                document.getElementById('footer').innerHTML = data;  // 將獲得的 HTML 內容插入到 ID 為 'footer' 的元素中
+            })
+            .catch(error => console.error('Error loading footer:', error));  // 如果過程中有任何錯誤，這裡會捕捉到錯誤並打印出錯誤訊息
+        
+
+
+		
+  			document.addEventListener("DOMContentLoaded", function () {
+   			 // 選取 Confirm Booking 按鈕
+    		const confirmButton = document.querySelector(".btn-primary.rounded.full-width");
+    		// 選取 ID 為 "done" 的區塊
+    		const doneSection = document.getElementById("done");
+
+    		// 添加點擊事件
+    		confirmButton.addEventListener("click", function (event) {
+     			 event.preventDefault(); // 防止默認跳轉行為
+      
+      			// 顯示 "done" 區塊
+     			 if (doneSection) {
+       			 doneSection.style.display = "block"; // 顯示區塊
+      			}
+
+      			// 滾動到 "done" 區塊
+      		doneSection.scrollIntoView({ behavior: "smooth", block: "start" });
+   		 		});
+  			});
+
+
 		</script>
 	</body>
 </html>
