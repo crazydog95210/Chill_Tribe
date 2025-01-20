@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+        <title>收藏清單</title>	
+		
+        <!-- Custom CSS -->
+        <link href="assets/css/styles.css" rel="stylesheet">
+		
+		
+		<!-- Custom Color Option -->
+		<link href="assets/css/colors.css" rel="stylesheet">
+		<style>
+			#done {
+  			display: none; 
+			}
+			.sides_list_property {
+            position: relative;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        .sides_list_property_thumb img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        .delete-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: red;
+            font-size: 18px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .delete-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .position-absolute {
+            position: absolute;
+        }
+
+        .top-50 {
+            top: 50%;
+        }
+
+        .start-0 {
+            left: 0;
+        }
+
+        .translate-middle-y {
+            transform: translateY(-50%);
+        }
+
+		</style>
+    </head>
+	 <!-- Top header Start  -->
+	 <header id="header"> </header>
+	 <!-- Top header End  -->
+	<!-- ============================ 內容放這(開始) ================================== -->
+	<section>
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasScrollingLabel">收藏清單</h5>
+			<a href="#" data-bs-dismiss="offcanvas" aria-label="Close">
+				<span class="svg-icon text-primary svg-icon-2hx">
+					<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="currentColor"/>
+						<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="currentColor"/>
+						<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="currentColor"/>
+					</svg>
+				</span>
+			</a>
+		</div>
+		<div class="offcanvas-body">
+			<ul class="nav nav-pills sider_tab mb-3" id="pills-tab" role="tablist">
+				
+			</ul>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-compare" role="tabpanel" aria-labelledby="pills-compare-tab" tabindex="0">
+					<div class="sidebar_featured_property">
+								
+						<!-- List Sibar Property -->
+						<div class="sides_list_property p-2 position-relative">
+							<input type="radio" id="property1" name="property" class="position-absolute top-50 start-0 translate-middle-y">
+							<div class="sides_list_property_thumb">
+								<img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+							</div>
+							<div class="sides_list_property_detail">
+								<h4><a href="single-property-1.html">Loss vengel New Apartment</a></h4>
+								<span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Sans Fransico</span>
+								<div class="lists_property_price">
+									<div class="lists_property_types">
+										<div class="property_types_vlix sale">For Sale</div>
+									</div>
+									<div class="lists_property_price_value">
+										<h4 class="text-primary">$4,240</h4>
+									</div>
+								</div>
+							</div>
+							<i class="fa-solid fa-trash delete-btn" onclick="deleteProperty(this)"></i>
+						</div>
+
+						<!-- List Sibar Property -->
+						<div class="sides_list_property p-2 position-relative">
+							<input type="radio" id="property2" name="property" class="position-absolute top-50 start-0 translate-middle-y">
+							<div class="sides_list_property_thumb">
+								<img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+							</div>
+							<div class="sides_list_property_detail">
+								<h4><a href="single-property-1.html">Montreal Quriqe Apartment</a></h4>
+								<span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Liverpool, London</span>
+								<div class="lists_property_price">
+									<div class="lists_property_types">
+										<div class="property_types_vlix">For Rent</div>
+									</div>
+									<div class="lists_property_price_value">
+										<h4 class="text-primary">$7,380</h4>
+									</div>
+								</div>
+							</div>
+							<i class="fa-solid fa-trash delete-btn" onclick="deleteProperty(this)"></i>
+						</div>
+
+						<!-- List Sibar Property -->
+						<div class="sides_list_property p-2 position-relative">
+							<input type="radio" id="property3" name="property" class="position-absolute top-50 start-0 translate-middle-y">
+							<div class="sides_list_property_thumb">
+								<img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+							</div>
+							<div class="sides_list_property_detail">
+								<h4><a href="single-property-1.html">Curmic Studio For Office</a></h4>
+								<span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Montreal, Canada</span>
+								<div class="lists_property_price">
+									<div class="lists_property_types">
+										<div class="property_types_vlix buy">For Buy</div>
+									</div>
+									<div class="lists_property_price_value">
+										<h4 class="text-primary">$8,730</h4>
+									</div>
+								</div>
+							</div>
+							<i class="fa-solid fa-trash delete-btn" onclick="deleteProperty(this)"></i>
+						</div>
+
+						<!-- List Sibar Property -->
+						<div class="sides_list_property p-2 position-relative">
+							<input type="radio" id="property4" name="property" class="position-absolute top-50 start-0 translate-middle-y">
+							<div class="sides_list_property_thumb">
+								<img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+							</div>
+							<div class="sides_list_property_detail">
+								<h4><a href="single-property-1.html">Montreal Quebec City</a></h4>
+								<span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Sreek View, New York</span>
+								<div class="lists_property_price">
+									<div class="lists_property_types">
+										<div class="property_types_vlix">For Rent</div>
+									</div>
+									<div class="lists_property_price_value">
+										<h4 class="text-primary">$6,240</h4>
+									</div>
+								</div>
+							</div>
+							<i class="fa-solid fa-trash delete-btn" onclick="deleteProperty(this)"></i>
+						</div>
+
+						
+						<div class="input-group">
+							<a href="compare-property.html" class="btn btn-light-primary fw-medium full-width">結帳去</a>
+						</div>
+					</div>	
+				</div>
+				
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+				
+			
+		</div>
+		   <!-- ============================================================== -->
+		   <!-- End Wrapper -->
+		   <!-- ============================================================== -->
+
+	</section>
+	<!-- ============================ 內容(結束) ================================== -->
+	
+	<!-- ============================ Footer Start ================================== -->
+	<footer id="footer"> </footer>
+	<!-- ============================ Footer End ================================== -->
+	
+    		<!-- Log In Modal -->
+			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true"></div>
+			<!-- End Modal -->
+
+
+		<!-- ============================================================== -->
+		<!-- All Jquery -->
+		<!-- ============================================================== -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/rangeslider.js"></script>
+		<script src="assets/js/select2.min.js"></script>
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="assets/js/slick.js"></script>
+		<script src="assets/js/slider-bg.js"></script>
+		<script src="assets/js/lightbox.js"></script> 
+		<script src="assets/js/imagesloaded.js"></script>
+		 
+		<script src="assets/js/custom.js"></script>
+		<!-- ============================================================== -->
+		<!-- This page plugins -->
+		<!-- ============================================================== -->
+		
+		
+		<script src="assets/js/dropzone.js"></script>
+		<!-- New Js -->
+		<script>
+			 // 刪除按鈕功能
+			 function deleteProperty(button) {
+        const confirmDelete = confirm("確定刪除?");
+        if (confirmDelete) {
+            const propertyElement = button.closest(".sides_list_property");
+            propertyElement.remove();
+        }
+    }
+
+			
+             // 載入 header.html
+			$('#header').load('header.html');
+           
+		   // 載入 footer.html
+		   $('#footer').load('footer.html');
+	   
+		   // 載入 login.html
+		   $('#login').load('login.html');
+        
+
+
+		
+  			document.addEventListener("DOMContentLoaded", function () {
+   			 // 選取 Confirm Booking 按鈕
+    		const confirmButton = document.querySelector(".btn-primary.rounded.full-width");
+    		// 選取 ID 為 "done" 的區塊
+    		const doneSection = document.getElementById("done");
+
+    		// 添加點擊事件
+    		confirmButton.addEventListener("click", function (event) {
+     			 event.preventDefault(); // 防止默認跳轉行為
+      
+      			// 顯示 "done" 區塊
+     			 if (doneSection) {
+       			 doneSection.style.display = "block"; // 顯示區塊
+      			}
+
+      			// 滾動到 "done" 區塊
+      		doneSection.scrollIntoView({ behavior: "smooth", block: "start" });
+   		 		});
+  			});
+
+
+		</script>
+	</body>
+</html>
