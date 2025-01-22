@@ -111,17 +111,17 @@
 						<div class="sides_list_property p-2 position-relative">
 							<input type="radio" id="property2" name="property" class="position-absolute top-50 start-0 translate-middle-y">
 							<div class="sides_list_property_thumb">
-								<img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+								<img src="/src/main/webapp/backpower/_html/72302220-760X352 (1).jpg" class="img-fluid" alt="">
 							</div>
 							<div class="sides_list_property_detail">
-								<h4><a href="single-property-1.html">Montreal Quriqe Apartment</a></h4>
-								<span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>Liverpool, London</span>
+								<h4><a href="single-property-1.html">澎湖花枝丸、黑糖糕</a></h4>
+								<span class="text-muted-2"><i class="fa-solid fa-location-dot"></i>澎湖, 花枝丸</span>
 								<div class="lists_property_price">
 									<div class="lists_property_types">
-										<div class="property_types_vlix">For Rent</div>
+										<div class="property_types_vlix">吃！！！</div>
 									</div>
 									<div class="lists_property_price_value">
-										<h4 class="text-primary">$7,380</h4>
+										<h4 class="text-primary">$9,453</h4>
 									</div>
 								</div>
 							</div>
@@ -171,8 +171,11 @@
 						</div>
 
 						
-						<div class="input-group">
+						<!-- <div class="input-group">
 							<a href="compare-property.html" class="btn btn-light-primary fw-medium full-width">結帳去</a>
+						</div>-->
+						<div class="input-group">
+							<a href="javascript:void(0);" onclick="goToPayment()" class="btn btn-light-primary fw-medium full-width">結帳去</a>
 						</div>
 					</div>	
 				</div>
@@ -266,7 +269,34 @@
       		doneSection.scrollIntoView({ behavior: "smooth", block: "start" });
    		 		});
   			});
+			//------------------------------
+			  function goToPayment() {
+				// 找到選中的 property
+				const selectedProperty = document.querySelector('input[name="property"]:checked');
+				if (!selectedProperty) {
+					alert("請選擇一個項目!");
+					return;
+				}
 
+				// 獲取該項目的相關內容
+				const propertyContainer = selectedProperty.closest('.sides_list_property');
+				const title = propertyContainer.querySelector('h4 a').textContent.trim();
+				const location = propertyContainer.querySelector('.text-muted-2').textContent.trim();
+				const price = propertyContainer.querySelector('.lists_property_price_value h4').textContent.trim();
+
+				// 將資料組裝成對象
+				const propertyData = {
+					title: title,
+					location: location,
+					price: price
+				};
+
+				// 存到 localStorage（或可使用URL參數）
+				localStorage.setItem('selectedProperty', JSON.stringify(propertyData));
+
+				// 跳轉到目標網頁
+				window.location.href = 'payment.html';
+			}
 
 		</script>
 	</body>

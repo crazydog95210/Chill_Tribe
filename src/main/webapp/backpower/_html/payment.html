@@ -403,129 +403,47 @@
 						   </div>
 						   <!-- Sidebar End -->
 							   
+						   <!-- 左側結帳內容 -->
 						   <div class="col-lg-3 col-md-12">
-							   <div class="checkout-side">
-							   
-								   <div class="booking-short">
-									   <img src="https://placehold.co/1200x800" class="img-fluid" alt="" />
-									   <h4>Manali To Paris, London</h4>
-									   <span>Liverpool, London</span>
-								   </div>
-								   
-								   <div class="booking-short-side">
-									   <div class="accordion" id="accordionExample">
-										   <div class="card">
-											   <div class="card-header" id="bookinDet">
-												 <h2 class="mb-0">
-												   <button class="btn btn-link py-0" type="button" data-bs-toggle="collapse" data-bs-target="#bookinSer" aria-expanded="true" aria-controls="bookinSer">
-													 Booking Detail
-												   </button>
-												 </h2>
-											   </div>
-   
-											   <div id="bookinSer" class="collapse show" aria-labelledby="bookinDet" data-parent="#accordionExample">
-												   <div class="card-body">
-													   <ul class="booking-detail-list">
-														   <li>10 May 2020- 20 May 2020</li>
-														   <li>Tour Days<span>5 Days</span></li>
-														   <li>Adults<span>4</span></li>
-														   <li>Children<span>3</span></li>
-													   </ul>
-												   </div>
-											   </div>
-										   </div>
-										   
-										   <div class="card">
-											   <div class="card-header" id="extraFeat">
-												 <h2 class="mb-0">
-												   <button class="btn btn-link py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#extraSer" aria-expanded="false" aria-controls="extraSer">
-													   Extra Features
-												   </button>
-												 </h2>
-											   </div>
-											   <div id="extraSer" class="collapse" aria-labelledby="extraFeat" data-parent="#accordionExample">
-												   <div class="card-body">
-													   <ul class="booking-detail-list">
-														   <li>
-															   <div class="form-check">
-																   <input class="form-check-input" type="checkbox" value="" id="brks">
-																   <label class="form-check-label" for="brks">
-																	   Breakfast
-																   </label>
-															   </div>
-														   </li>
-														   <li>
-															   <div class="form-check">
-																   <input class="form-check-input" type="checkbox" value="" id="rsv">
-																   <label class="form-check-label" for="rsv">
-																	   Rooms Service
-																   </label>
-															   </div>
-														   </li>
-														   <li>
-															   <div class="form-check">
-																   <input class="form-check-input" type="checkbox" value="" id="wifis">
-																   <label class="form-check-label" for="wifis">
-																	   Wifi Free
-																   </label>
-															   </div>
-														   </li>
-														   <li>
-															   <div class="form-check">
-																   <input class="form-check-input" type="checkbox" value="" id="carser">
-																   <label class="form-check-label" for="carser">
-																	   Car Driving
-																   </label>
-															   </div>
-														   </li>
-													   </ul>
-												   </div>
-											   </div>
-											 </div>
-											 
-											 <div class="card">
-											   <div class="card-header" id="CouponCode">
-												 <h2 class="mb-0">
-												   <button class="btn btn-link py-0 h-auto collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#couponcd" aria-expanded="false" aria-controls="couponcd">
-													 Coupon Code
-												   </button>
-												 </h2>
-											   </div>
-											   <div id="couponcd" class="collapse show" aria-labelledby="CouponCode" data-parent="#accordionExample">
-												   <div class="card-body">
-													   <div class="form-group">
-														   <input type="text" class="form-control" placeholder="Code">
-														   <button type="button" class="btn btn-dark full-width mt-2">Apply</button>
-													   </div>
-												   </div>
-											   </div>
-										   </div>
-										   
-										   <div class="card">
-											   <div class="card-header" id="PayMents">
-												 <h2 class="mb-0">
-												   <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payser" aria-expanded="false" aria-controls="payser">
-													 Payment
-												   </button>
-												 </h2>
-											   </div>
-											   <div id="payser" class="collapse" aria-labelledby="PayMents" data-parent="#accordionExample">
-												   <div class="card-body">
-													   <ul class="booking-detail-list">
-														   <li>Sub Total<span>$224</span></li>
-														   <li>Extra Price<span>$70</span></li>
-														   <li>Tax<span>$20</span></li>
-														   <li><b>Pay Ammount</b><span>$314</span></li>
-													   </ul>
-												   </div>
-											   </div>
-										   </div>
-										   
-									   </div>
-								   </div>
-								   
-							   </div>
-						   </div>
+							<div class="checkout-side">
+								<!-- Booking Short -->
+								<div class="booking-short" id="booking-short">
+									<!-- 將動態填充選中的內容 -->
+								</div>
+								
+								<!-- 原有的 Booking Short Side -->
+								<div class="booking-short-side">
+									<div class="accordion" id="accordionExample">
+										<!-- Booking Details -->
+										<div class="card">
+											<div class="card-header" id="bookinDet">
+												<h2 class="mb-0">
+													<button class="btn btn-link py-0" type="button" data-bs-toggle="collapse" data-bs-target="#bookinSer" aria-expanded="true" aria-controls="bookinSer">
+														Booking Detail
+													</button>
+												</h2>
+											</div>
+											<div id="bookinSer" class="collapse show" aria-labelledby="bookinDet" data-parent="#accordionExample">
+												<div class="card-body">
+													<ul class="booking-detail-list">
+														<li>10 May 2020- 20 May 2020</li>
+														<li>Tour Days<span>5 Days</span></li>
+														<li>Adults<span>4</span></li>
+														<li>Children<span>3</span></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+			
+										<!-- 其他原有內容保持不變 -->
+										<!-- Extra Features, Coupon Code, Payment -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
 					   </div>
 				   </div>
 			   </section>
@@ -725,7 +643,25 @@
    		 		});
   			});
 
+			// 從 localStorage 獲取選中的資料
+			const propertyData = JSON.parse(localStorage.getItem('selectedProperty'));
 
+			// 如果有數據，動態生成「Booking Short」內容
+			if (propertyData) {
+				const bookingShortContainer = document.getElementById('booking-short');
+				bookingShortContainer.innerHTML = `
+					<img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+					<h4>${propertyData.title}</h4>
+					<span>${propertyData.location}</span>
+				`;
+			} else {
+				// 如果沒有數據，顯示占位內容
+				document.getElementById('booking-short').innerHTML = `
+					<img src="https://placehold.co/1200x800" class="img-fluid" alt="">
+					<h4>No Property Selected</h4>
+					<span>Please return to the previous page and select a property.</span>
+				`;
+			}
 		</script>
 	</body>
 </html>
