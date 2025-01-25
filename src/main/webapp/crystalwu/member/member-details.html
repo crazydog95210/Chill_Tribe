@@ -14,6 +14,7 @@
 <!-- chill-header css -->
 <link href="../_html/assets/css/chill-header.css" rel="stylesheet">
 
+
 <!-- Custom Color Option -->
 <link href="../_html/assets/css/colors.css" rel="stylesheet">
 
@@ -75,50 +76,58 @@
 					<div class="col-lg-9 col-md-12">
 						<!-- ======================== 頁面內容放這裡 ======================== -->
 						<div class="dashboard-wraper">
-							<!-- Basic Information -->
 							<div class="form-submit">
-								<h4>更改密碼</h4>
-								<p>為了保護您帳號的安全，請不要分享您的密碼給其他人</p>
+								<h4>個人檔案</h4>
 								<div class="submit-section">
 									<div class="row">
 										<div class="form-group col-md-6">
-											<label>新的密碼</label> <span class="input-required">*</span> <input
-												type="password" class="form-control">
+											<label>顯示名稱</label> <span class="input-required">*</span> <input
+												type="text" class="form-control" value="王小明">
 										</div>
 
 										<div class="form-group col-md-6">
-											<label>確認密碼</label> <span class="input-required">*</span> <input
-												type="password" class="form-control">
+											<label>帳號/Email</label> <input type="email"
+												class="form-control simple" value="preet77@gmail.com"
+												disabled>
 										</div>
 
-										<div class="form-submit">
-											<div class="submit-section">
-												<div class="row">
-
-													<div class="form-group col-lg-12 col-md-12"
-														style="display: flex; justify-content: flex-end;">
-														<button class="btn btn-primary rounded px-3" type="button">確認送出</button>
-													</div>
-
-												</div>
-											</div>
+										<div class="form-group col-md-6">
+											<label>生日</label> <input type="date" name="member-birthday"
+												class="form-control" value="1998-12-13" required>
 										</div>
 
-										<h6>修改密碼注意事項</h6>
-										<pre>
-密碼格式要求：
+										<div class="form-group col-md-6">
+											<label>身分證字號</label>
+											<!-- <span class="input-required">*</span> -->
+											<input type="text" class="form-control simple"
+												value="A123456789" disabled>
+										</div>
 
-至少包含 6 個字符，建議使用 12 個或更多字符。
-必須包含以下四種類型的字符中的至少三種：
-英文字母（大小寫）
-數字（0-9）
-特殊字符（例如：!@#$%^&*()）
+										<div class="form-group col-md-6">
+											<label>性別</label> <select name="gender" id="gender"
+												class="form-control">
+												<option value="male">男生</option>
+												<option value="female">女生</option>
+												<option value="other">其他</option>
+											</select>
+										</div>
 
-避免常見弱密碼：
+										<div class="form-group col-md-6">
+											<label>手機號碼</label> <span class="input-required">*</span> <input
+												type="text" class="form-control" value="0912345678">
+										</div>
+									</div>
+								</div>
+							</div>
 
-避免使用「12345678」、「password」、「qwerty」等容易被破解的密碼。
-避免重複使用舊密碼。
-                        </pre>
+							<div class="form-submit">
+								<div class="submit-section">
+									<div class="row">
+
+										<div class="form-group col-lg-12 col-md-12"
+											style="display: flex; justify-content: flex-end;">
+											<button class="btn btn-primary rounded px-3" type="button">儲存變更</button>
+										</div>
 
 									</div>
 								</div>
